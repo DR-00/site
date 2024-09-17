@@ -509,6 +509,14 @@ section {
     min-height: 400px;
 }
 
+#services img {
+    overflow: hidden;
+    object-fit: cover;
+    vertical-align: middle;
+    max-height: 160px;
+    width: 100%;
+}
+
 /* --------------------------------------------------------------
 # Featured
 -------------------------------------------------------------- */
