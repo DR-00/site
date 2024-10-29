@@ -461,7 +461,7 @@ section {
 }
 
 .about .content ul li {
-    list-style: circle;
+    list-style: none;
     padding-bottom: 10px;
 
 }
