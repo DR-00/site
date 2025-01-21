@@ -374,7 +374,7 @@ h6 {
     font-weight: 400;
 }
 
-#hero .btn-get-started {
+#hero .btn-get-started, .btn-consult {
     font-family: "Montserrat", sans-serif;
     text-transform: uppercase;
     font-weight: 400;
@@ -389,7 +389,7 @@ h6 {
     background: #00ADEE;
 }
 
-#hero .btn-get-started:hover {
+#hero .btn-get-started:hover, .btn-consult:hover {
     background: #fff;
     color: #00ADEE;
 }
