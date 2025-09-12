@@ -92,6 +92,7 @@ plugins:
   - jekyll-paginate
   - jekyll-sitemap
   - jekyll-seo-tag
+  - jekyll-archives
 
 # Pagination 
 paginate: 9
