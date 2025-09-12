@@ -226,7 +226,7 @@ border-radius: 100%;
 
 // Mobile typography adjustments
 @media (max-width: 768px) {
-  p {
+  p, li {
     font-size: 0.8rem;
   }
 }
