@@ -1,28 +1,15 @@
 source "https://rubygems.org"
-# Hello! This is where you manage which Jekyll version is used to run.
-# When you want to use a different version, change it below, save the
-# file and run `bundle install`. Run Jekyll with `bundle exec`, like so:
-#
-# echo 'export PATH="/opt/homebrew/opt/ruby/bin:$PATH"' >> ~/.zshrc
-# source ~/.zshrc
-# gem install bundler
-# rm Gemfile.lock
-# gem update bundler
-# bundle install
-# bundle exec jekyll serve --livereload
-# bundle exec jekyll build
-#
-# This will help ensure the proper Jekyll version is running.
-# Happy Jekylling!
 
-# If you want to use GitHub Pages, remove the "gem "jekyll"" above and
-# uncomment the line below. To upgrade, run `bundle update github-pages`.
+# Use github-pages gem for GitHub Pages compatibility
 gem "github-pages", group: :jekyll_plugins
 
-# If you have any plugins, put them here!
+# Jekyll plugins (only those not included in github-pages)
 group :jekyll_plugins do
-  # All plugins are now managed by github-pages gem
+  # All standard plugins are included in github-pages gem
 end
+
+# Add webrick for Ruby 3.0+ compatibility
+gem "webrick", "~> 1.7"
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem
 # and associated library.
