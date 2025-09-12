@@ -5,7 +5,7 @@ subtitle: "A Personal Cyber Crisis Survival Guide"
 description: This article provides a step-by-step survival guide for individuals facing a personal cyber attack, outlining how to recognize the signs, take immediate action, regain control, and protect yourself from future incidents.
 author: Luke
 category: [ leadership, cybersecurity ]
-image: assets/post-images/need-a-ciso.jpg
+image: assets/post-images/hacked-phone.jpg
 featured: true
 ---
 
