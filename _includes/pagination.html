@@ -9,33 +9,34 @@
   <span class="navigation" role="navigation">
       <hr>
       {% if total_pages > 1 %}
-      <div class="pagination">
+      <ul class="pagination">
+      
           {% if current_page > 1 %}
               {% if current_page == 2 %}
-                  <a class="ml-1 mr-1" href="/blog/">&laquo; Prev</a>
+                  <li class="page-item"><a class="ml-1 mr-1 page-link" href="/blog/">&laquo; Prev</a></li>
               {% else %}
-                  <a class="ml-1 mr-1" href="/blog/page{{ current_page | minus: 1 }}/">&laquo; Prev</a>
+                  <li class="page-item"><a class="ml-1 mr-1 page-link" href="/blog/page{{ current_page | minus: 1 }}/">&laquo; Prev</a></li>
               {% endif %}
           {% else %}
-              <span>&laquo; Prev</span>
+              <li class="page-item">&laquo; Prev</li>
           {% endif %}
 
           {% for page_num in (1..total_pages) %}
               {% if page_num == current_page %}
-                  <span class="ml-1 mr-1">{{ page_num }}</span>
+                  <li class="page-item"><span class="ml-1 mr-1 page-item disabled">{{ page_num }}</span></li>
               {% elsif page_num == 1 %}
-                  <a class="ml-1 mr-1" href="/blog/">{{ page_num }}</a>
+                  <li class="page-item"><a class="ml-1 mr-1 page-link" href="/blog/">{{ page_num }}</a></li>
               {% else %}
-                  <a class="ml-1 mr-1" href="/blog/page{{ page_num }}/">{{ page_num }}</a>
+                  <li class="page-item"><a class="ml-1 mr-1 page-link" href="/blog/page{{ page_num }}/">{{ page_num }}</a></li>
               {% endif %}
           {% endfor %}
 
           {% if current_page < total_pages %}
-              <a class="ml-1 mr-1" href="/blog/page{{ current_page | plus: 1 }}/">Next &raquo;</a>
+              <li class="page-item"><a class="ml-1 mr-1 page-item page-link" href="/blog/page{{ current_page | plus: 1 }}/">Next &raquo;</a></li>
           {% else %}
-              <span>Next &raquo;</span>
+              <li class="page-item">Next &raquo;</li>
           {% endif %}
-      </div>
+      </ul>
       {% endif %}
   </span>
   
