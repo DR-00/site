@@ -302,12 +302,7 @@ PLATFORMS
 DEPENDENCIES
   github-pages
   jekyll-archives
-  jekyll-feed (~> 0.12)
   jekyll-last-modified-at
-  jekyll-paginate
-  jekyll-seo-tag
-  jekyll-sitemap
-  rouge
   tzinfo (~> 1.2)
   tzinfo-data
   wdm (~> 0.1.1)
