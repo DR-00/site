@@ -1,0 +1,125 @@
+<section class="industries-section py-5 mt-5">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h2 class="text-bold">Industries We Serve</h2> 
+            <p class="text-secondary">Serving executives and organizations across the globe</p>
+        </div>
+
+        <!-- Industries Grid -->
+        <div class="columns negative-m-s" style="margin-top: 2rem; justify-content: center;">
+            {% for industry in site.data.industries %}
+            <div class="column col-12 col-md-2 col-sm-4 col-xs-4">
+                <div class="industry-item text-center p-1 p-md-4">
+                    <div class="icon-container mb-1mb-md-3">
+                        <img class="icon-industries" src="/assets/tabler-icons/icons/{{ industry.icon }}.svg" alt="{{ industry.name }}"/>
+                    </div>
+                    <h6 class="industry-title">{{ industry.name }}</h6>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<style>
+
+.icon-industries {
+    width: 2.5em;
+    height: 2.5em;
+    stroke-width: 1;
+    filter: brightness(0) saturate(100%) invert(55%) sepia(50%) saturate(1947%) hue-rotate(159deg) brightness(90%) contrast(108%);
+}
+
+@media (max-width: 991px) {
+    .icon-industries {
+        width: 1.5em;
+        height: 1.5em;
+    }
+}
+
+.industries-section {
+    margin-top: 3rem !important;
+    padding-top: 3rem !important;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.industries-section .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    width: 100%;
+}
+
+.industry-item {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 8px;
+    background: white;
+    margin-bottom: 1.5rem;
+    min-height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+}
+
+.industry-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px var(--shadow-industries);
+}
+
+.icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    margin-bottom: 1rem;
+    flex-shrink: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.industry-item i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+    font-size: 2rem !important;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.industry-title {
+    margin: 0;
+    font-size: 0.9rem;
+    line-height: 1.2;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .industry-item {
+        margin-bottom: 1rem;
+        min-height: 100px;
+    }
+    
+    .industry-title {
+        font-size: 0.8rem;
+    }
+    
+    .icon-container {
+        width: 50px;
+        height: 50px;
+        margin-bottom: 0.75rem;
+    }
+    
+    .industry-item i {
+        font-size: 1.75rem !important;
+    }
+}
+</style>

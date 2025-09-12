@@ -1,0 +1,33 @@
+---
+layout: page
+title: Blog - Page 2
+page: 2
+---
+
+<section class="recent-posts">
+
+    <div class="row listrecent">
+
+        {% assign posts_per_page = site.posts_per_page %}
+        {% assign current_page = page.page %}
+        
+        {% assign start_index = current_page | minus: 1 | times: posts_per_page %}
+        {% assign total_posts = site.posts.size %}
+        {% assign total_pages = total_posts | divided_by: posts_per_page %}
+        {% assign remainder = total_posts | modulo: posts_per_page %}
+        {% if remainder > 0 %}
+            {% assign total_pages = total_pages | plus: 1 %}
+        {% endif %}
+        
+        {% for post in site.posts limit: posts_per_page offset: start_index %}
+
+        {% include postbox.html %}
+
+        {% endfor %}
+
+    </div>
+
+</section>
+
+
+{% include pagination.html %}

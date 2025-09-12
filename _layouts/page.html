@@ -1,0 +1,33 @@
+---
+layout: default
+title: Page
+---
+
+{% include header-home.html %}
+<div class="container-full">
+
+  <div class="container grid-xl">
+    <div class="columns negative-m-s">
+      <div class="column col-12">
+
+        <div class="card text-center mb-4">
+          <div class="card-body m-1">
+            {% assign current_product = site.data.products | where: "name", page.title | first %}
+            <h2 class="pt-2">
+              {% if current_product %}
+              <img class="icon-services-page" src="/assets/tabler-icons/icons/{{ current_product.icon }}.svg" />
+              {% endif %}
+              {{ page.title }}
+            </h2>
+
+          </div>
+        </div>
+
+        {{ content }}
+
+      </div>
+    </div>
+  </div>
+
+  {% include cta.html %}
+</div>

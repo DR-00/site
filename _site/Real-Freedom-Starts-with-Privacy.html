@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <meta charset="UTF-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <meta property="og:title" content="Decisive Resources">
+  <meta property="og:site_name" content="Decisive Resources">
+  <meta property="og:url" content="http://localhost:4000">
+  <meta property="og:description" content="A Bespoke Privacy Management and Consulting Firm">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="http://localhost:4000/assets/odin-meta.png">
+
+  <title>
+    
+      Real Freedom Starts with Privacy | Decisive Resources
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/assets/css/fonts.css">
+  <link rel="stylesheet" href="/css/styles.css">
+  <link href="http://localhost:4000/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"> 
+
+  <!-- Preload critical icons -->
+  <link rel="preload" href="/assets/tabler-icons/icons/article.svg" as="image">
+  <link rel="preload" href="/assets/tabler-icons/icons/brand-linkedin.svg" as="image">
+  <link rel="preload" href="/assets/tabler-icons/icons/brand-twitter.svg" as="image">
+  <link rel="preload" href="/assets/tabler-icons/icons/mail.svg" as="image">
+
+  <!-- Icons -->
+  <link rel="shortcut icon" href="http://localhost:4000/icon/favicon.ico">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/atom+xml" title="Decisive Resources" href="atom.xml">
+</head>
+
+
+  <body>
+    <div class="header-bg">
+  <div class="container-full">
+    <div class="header ">
+      <nav class="container grid-xl navbar">
+  <div class="flex-vertical-center hide-sm">
+    <a style="width: 120px; background: transparent; border: none;" href="http://localhost:4000" class="logo">
+      <!-- <img style="max-width: 100%; border: none; display: block;" src="/assets/logo-b.svg" alt="Logo" title="Decisive Resources"/> -->
+    </a>
+  </div>
+  <div class="text-center show-sm">
+    <div class="navbar-toggle" onclick="toggleMenu()" style="font-size: 32px; padding: 10px; cursor: pointer;">
+      <img class="icon-menu" src="/assets/tabler-icons/icons/article.svg" alt="menu" title="Menu" id="menu-icon"/>
+    </div>
+  </div>
+  <ul class="main-nav" id="mobile-menu">
+    <div class="close-menu show-sm" onclick="toggleMenu()" style="position: absolute; top: 20px; right: 20px; font-size: 32px; color: white; cursor: pointer;">
+      <img class="icon-menu d-none" src="/assets/tabler-icons/icons/article.svg" alt="menu" title="Menu" id="menu-icon"/>
+    </div>
+    
+    <li class="mx-4">
+      <a  class="nav-links" href="/">Home</a>
+    </li>
+    
+    
+    <li class="mx-4">
+      <a  class="nav-links" href="/services">Services</a>
+    </li>
+    
+    
+    <li class="mx-4">
+      <a  class="nav-links" href="/about">About</a>
+    </li>
+    
+    
+    <li class="mx-4">
+      <a  class="nav-links" href="/blog">Blog</a>
+    </li>
+    
+    <li>
+      <a href="/consultation" style="height: auto;" class="btn btn-lg btn-outline-primary py-2">Get In Touch</a>
+    </li>
+  </ul>
+</nav>
+
+<script>
+function toggleMenu() {
+  const menu = document.getElementById('mobile-menu');
+  const menuIcon = document.getElementById('menu-icon');
+  menu.classList.toggle('active');
+  
+  // Change icon
+  if (menu.classList.contains('active')) {
+    menuIcon.className = 'icon-menu d-none';
+  } else {
+    menuIcon.className = 'icon-menu';
+  }
+}
+
+// Close menu when clicking outside
+document.addEventListener('click', function(event) {
+  const menu = document.getElementById('mobile-menu');
+  const toggle = document.querySelector('.navbar-toggle');
+  
+  if (menu.classList.contains('active') && !menu.contains(event.target) && !toggle.contains(event.target)) {
+    toggleMenu();
+  }
+});
+</script>
+
+
+      <header class="container grid-xl landing-header">
+        <div class="columns pt-12 pb-8">
+          <div class="column col-11 col-mx-auto text-center">
+            <a href="http://localhost:4000">
+            <img class="m-4" style="max-width: 10em; border: none;" src="/assets/logo-b.svg" alt="Logo" title="Decisive Resources"/>
+            </a>
+            <h1 class="mt-2 super-h1">Decisive Resources</h1>
+            <h4 class="text-secondary">A Bespoke Privacy Management and Consulting Firm</h4>
+          </div>
+        </div>
+      </header>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container-full">
+  <div class="container grid-xl">
+
+    <div class="columns negative-m-s">
+      <div class="column col-12">
+        <div class="card text-center mb-4">
+          <div class="card-body m-1">
+            
+            <h2 class="pt-2">
+              Real Freedom Starts with Privacy
+            </h2>
+            <h4 class="pt-2 text-secondary pb-3">
+              The Smartest Investment High-Profile Individuals Can Make
+            </h4>
+
+            
+            <div class="post-image-container">
+              <img class="post-cover-image" src="/assets/post-images/yacht.jpg" alt="Real Freedom Starts with Privacy"
+                title="Real Freedom Starts with Privacy" />
+            </div>
+            
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+    <div class="columns">
+
+      <div class="column col-12">
+        <div class="card">
+          <div class="card-body p-3 p-md-5">
+            
+            <div class="flex-vertical-center mb-4">
+              <figure class="avatar d-inline-block" style="align-items: center;">
+                <img src="/assets/img/l-small.jpg" alt="...">
+              </figure>
+              <div class="ml-2">
+                <p class="text-dark text-small mb-0">Written by <span class="text-primary">Luke Sloan</span></p>
+                <p class="text-dark text-small text-italic mb-0">06 May 2025</p>
+              </div>
+            </div>
+
+            <hr />
+
+<p>High-profile lives are lived in full view. From red carpets to earnings calls, from paparazzi lenses to government filings, from social media to surveillance drones exposure is constant.</p>
+
+<p>But real freedom does not come from hiding. It comes from control.</p>
+
+<p>A <strong>comprehensive privacy management plan</strong> gives you that control. It enables you to live visibly while keeping your personal life, family, and assets protected. It is not about disappearing. It is about being untouchable.</p>
+
+<p>Here’s what a complete privacy strategy delivers and what it protects you from.</p>
+
+<hr />
+
+<h3 id="what-you-gain-freedom-control-confidence">What You Gain: Freedom, Control, Confidence</h3>
+
+<p>A real privacy plan empowers your lifestyle rather than restricting it.</p>
+
+<ul>
+  <li>Travel without leaving a trail of booking data, location check-ins, or aircraft registration records</li>
+  <li>Live in your home without it being discoverable through online property searches</li>
+  <li>Appear in public without exposing your children or loved ones to residual attention</li>
+  <li>Engage with fans or the press without handing adversaries a roadmap to your movements</li>
+  <li>Control when and how your identity connects to business ventures, assets, and estates</li>
+</ul>
+
+<p>Privacy is not about pulling back. It is about moving forward without risk.</p>
+
+<hr />
+
+<h3 id="the-threats-it-prevents-and-deters">The Threats It Prevents and Deters</h3>
+
+<p>A properly executed privacy management plan protects against real, active threats. This is not theory. These are the attacks you stop before they happen.</p>
+
+<h4 id="1-doxxing-and-personal-exposure">1. Doxxing and Personal Exposure</h4>
+
+<ul>
+  <li>Prevents home addresses, phone numbers, family names, and vehicles from being linked to your public identity</li>
+  <li>Removes vulnerable filings and records that expose where you live, who you are connected to, or what you own</li>
+</ul>
+
+<h4 id="2-stalking-and-harassment">2. Stalking and Harassment</h4>
+
+<ul>
+  <li>Disrupts location breadcrumbs from real estate listings, aviation logs, and social content</li>
+  <li>Makes it harder for obsessed fans, stalkers, or ex-partners to track patterns or access physical proximity</li>
+</ul>
+
+<h4 id="3-targeted-home-invasions-or-robberies">3. Targeted Home Invasions or Robberies</h4>
+
+<ul>
+  <li>Removes the digital evidence criminals use to scout high-value homes</li>
+  <li>Shields the location of private estates, vacation homes, and rental properties</li>
+</ul>
+
+<h4 id="4-reputation-attacks-and-digital-impersonation">4. Reputation Attacks and Digital Impersonation</h4>
+
+<ul>
+  <li>Blocks old business ties, campaign filings, or personal records from being exploited in media hit jobs</li>
+  <li>Protects family members from being impersonated or leveraged in social engineering campaigns</li>
+</ul>
+
+<h4 id="5-cyber-intrusions">5. Cyber Intrusions</h4>
+
+<ul>
+  <li>Limits the exposure of critical personal data that hackers use for SIM swaps, identity fraud, and account compromise</li>
+  <li>Reduces metadata and background intel that AI tools use to reconstruct digital personas</li>
+</ul>
+
+<h4 id="6-paparazzi-and-media-surveillance">6. Paparazzi and Media Surveillance</h4>
+
+<ul>
+  <li>Obscures key lifestyle indicators that photo agencies use to get location leads</li>
+  <li>Keeps your presence at events, private clubs, or recovery centers out of circulation</li>
+</ul>
+
+<h4 id="7-business-and-financial-exploits">7. Business and Financial Exploits</h4>
+
+<ul>
+  <li>Conceals high-value assets and ownership structures from opportunistic lawsuits and rival due diligence</li>
+  <li>Reduces visibility in business registrations that can attract unwanted scrutiny or leverage</li>
+</ul>
+
+<hr />
+
+<h3 id="privacy-turns-security-from-defensive-to-offensive">Privacy Turns Security from Defensive to Offensive</h3>
+
+<p>Traditional security reacts. Privacy management anticipates.</p>
+
+<p>When you integrate privacy into your security posture, you do not just defend against threats, you eliminate them before they form.</p>
+
+<ul>
+  <li>Adversaries cannot plan if they cannot map your footprint</li>
+  <li>Stalkers cannot track what they cannot see</li>
+  <li>Criminals cannot target what they cannot identify</li>
+  <li>Investigators, paparazzi, and online trolls are forced to work blind</li>
+</ul>
+
+<p>This offensive posture shifts the balance of power. You are not just protected. You are proactively untouchable.</p>
+
+<hr />
+
+<h3 id="who-needs-this">Who Needs This</h3>
+
+<p>This is for anyone whose visibility comes with risk. That includes:</p>
+
+<ul>
+  <li>A-list celebrities who want to live in the spotlight without sacrificing safety</li>
+  <li>Tech founders and crypto entrepreneurs exposed through innovation, capital, and controversy</li>
+  <li>CEOs, board members, and business leaders who face activist pressure, litigation, or media interest</li>
+  <li>Wealthy families who need to protect their estates and children from becoming targets</li>
+</ul>
+
+<hr />
+
+<h3 id="what-we-do-at-decisive-resources">What We Do at Decisive Resources</h3>
+
+<p>We build elite privacy programs for public figures who cannot afford exposure. Our team includes former surveillance professionals, cyber intelligence operators, and protection experts who understand how adversaries think and how to stay ahead of them.</p>
+
+<p>We work with your chief of staff, security team, or family office to integrate seamlessly into your existing protection structure. Everything we do is discreet, strategic, and tailored to you.</p>
+
+<p>This is not about leaving the public eye. It is about staying above the threat.</p>
+
+<hr />
+
+<p><strong>You are not paranoid for wanting privacy. You are exposed for not having it.</strong></p>
+
+<p>Let us help you reclaim your freedom and protect what matters most.</p>
+
+
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Previous and Next Post Navigation -->
+      <div class="column col-12 mt-4">
+        
+        
+        
+        
+        
+        
+        
+        
+
+        
+        
+
+        
+
+        <div class="row pb-5">
+          
+          <div class="column col-12 col-md-6 my-4">
+            <h4 class="previous-next">Previous Post</h4>
+            
+            <!-- begin post -->
+
+
+
+<div class="col-12 my-1 my-md-2 h-100">
+    <div class="listfeaturedtag h-100">
+        <div class="row h-100">
+            <div class="col-12 col-md-12 col-lg-5 pr-lg-0">
+                <div class="h-100">
+                    <div class="wrapthumbnail">
+                        <a href="/Privacy-by-Design-Why-Wealth-Isnt-Secure-Without-a-Privacy-Strategy" aria-label="Read More">
+                            
+                            <img class="featured-box-img-cover" alt="Featured Image" src="/assets/post-images/plane.jpg">
+                            
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-12 col-lg-7">
+                <div class="h-100 card-group">
+                    <div class="card">
+                        <div class="card-body">
+                            <h2 class="card-title">
+                                <a href="/Privacy-by-Design-Why-Wealth-Isnt-Secure-Without-a-Privacy-Strategy">Privacy by Design</a>
+                            </h2>
+                            <h4 class="card-subtitle text-secondary">Why Wealth Isn’t Secure Without a Privacy Strategy</h4>
+                            <h4 class="card-text">True wealth protection requires more than security—it demands a proactive privacy strategy. Learn why a dedicated privacy strategy folder is essential for safeguarding your assets,...</h4>
+                        </div>
+                        <div class="card-footer b-0 bg-white mt-auto">
+                            <div class="wrapfooter">
+                                
+                                <span class="meta-footer-thumb">
+                                
+                                <img class="author-thumb" src="/assets/img/l-small.jpg" alt="Luke Sloan">
+                                
+                                </span>
+                                <span class="author-meta">
+                                <span class="post-name"><a target="_blank" href="https://www.decisiveresources.com">Luke Sloan</a></span><br/>
+                                
+                                <span class="post-date">02 Apr 2025</span>
+                                </span>
+                                <span class="post-read-more"><a href="/Privacy-by-Design-Why-Wealth-Isnt-Secure-Without-a-Privacy-Strategy" title="Read Story"><svg class="svgIcon-use" width="25" height="25" viewbox="0 0 25 25"><path d="M19 6c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v14.66h.012c.01.103.045.204.12.285a.5.5 0 0 0 .706.03L12.5 16.85l5.662 4.126a.508.508 0 0 0 .708-.03.5.5 0 0 0 .118-.285H19V6zm-6.838 9.97L7 19.636V6c0-.55.45-1 1-1h9c.55 0 1 .45 1 1v13.637l-5.162-3.668a.49.49 0 0 0-.676 0z" fill-rule="evenodd"></path></svg></a></span>
+                                <div class="clearfix"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end post -->
+
+
+
+<style>
+
+
+
+</style>
+          </div>
+          
+
+          
+          <div class="column col-12 col-md-6 my-4">
+            <h4 class="previous-next">Next Post</h4>
+            
+            <!-- begin post -->
+
+
+
+<div class="col-12 my-1 my-md-2 h-100">
+    <div class="listfeaturedtag h-100">
+        <div class="row h-100">
+            <div class="col-12 col-md-12 col-lg-5 pr-lg-0">
+                <div class="h-100">
+                    <div class="wrapthumbnail">
+                        <a href="/Ghost-Mode-The-Privacy-Pinnacles-of-Moving-Through-the-World-Unseen" aria-label="Read More">
+                            
+                            <img class="featured-box-img-cover" alt="Featured Image" src="/assets/post-images/ghost.jpg">
+                            
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-12 col-lg-7">
+                <div class="h-100 card-group">
+                    <div class="card">
+                        <div class="card-body">
+                            <h2 class="card-title">
+                                <a href="/Ghost-Mode-The-Privacy-Pinnacles-of-Moving-Through-the-World-Unseen">Ghost Mode</a>
+                            </h2>
+                            <h4 class="card-subtitle text-secondary">The Privacy Pinnacles of Moving Through the World Unseen</h4>
+                            <h4 class="card-text">Explore the advanced privacy strategies used by the ultra-private to move through the world unseen—covering second passports, anonymous banking, untraceable property ownership, and digital compartmentalization...</h4>
+                        </div>
+                        <div class="card-footer b-0 bg-white mt-auto">
+                            <div class="wrapfooter">
+                                
+                                <span class="meta-footer-thumb">
+                                
+                                <img class="author-thumb" src="/assets/img/m.jpg" alt="Mishaal Khan">
+                                
+                                </span>
+                                <span class="author-meta">
+                                <span class="post-name"><a target="_blank" href="https://www.MishaalKhan.com">Mishaal Khan</a></span><br/>
+                                
+                                <span class="post-date">06 Jun 2025</span>
+                                </span>
+                                <span class="post-read-more"><a href="/Ghost-Mode-The-Privacy-Pinnacles-of-Moving-Through-the-World-Unseen" title="Read Story"><svg class="svgIcon-use" width="25" height="25" viewbox="0 0 25 25"><path d="M19 6c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v14.66h.012c.01.103.045.204.12.285a.5.5 0 0 0 .706.03L12.5 16.85l5.662 4.126a.508.508 0 0 0 .708-.03.5.5 0 0 0 .118-.285H19V6zm-6.838 9.97L7 19.636V6c0-.55.45-1 1-1h9c.55 0 1 .45 1 1v13.637l-5.162-3.668a.49.49 0 0 0-.676 0z" fill-rule="evenodd"></path></svg></a></span>
+                                <div class="clearfix"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end post -->
+
+
+
+<style>
+
+
+
+</style>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+
+  </div>
+  
+<div class="column col-12 text-center mt-5">
+  <h4 class="mt-5">Need Help?</h4>
+</div>
+<div class="column col-12  col-mx-auto text-center pb-4">
+    <div class="col-12 text-center">
+        <a href="/consultation" class="btn-cta btn btn-outline-primary p-4 mb-2">Get In Touch</a>
+    </div>
+</div>
+
+<style>
+  .btn-cta {
+    line-height: 0 !important;
+  }
+</style>
+
+  <div class="container my-4">
+  <div class="container grid-xl">
+    <div class="columns justify-content-center">
+
+      
+      <div class="column col-12 col-md-2 col-sm-4 col-xs-4 m-2 cta">
+        <a href="/executive-privacy-management">
+          <div class="card card-link">
+            <div class="card-body text-center">
+              <div class="mb-2 services-icon-cta">
+                <img src="/assets/tabler-icons/icons/spy-off.svg" alt="Executive Privacy Management" />
+              </div>
+              <h6 class="text-dark">Executive Privacy Management</h6>
+            </div>
+          </div>
+        </a>
+      </div>
+      
+      <div class="column col-12 col-md-2 col-sm-4 col-xs-4 m-2 cta">
+        <a href="/vciso">
+          <div class="card card-link">
+            <div class="card-body text-center">
+              <div class="mb-2 services-icon-cta">
+                <img src="/assets/tabler-icons/icons/lock.svg" alt="vCISO" />
+              </div>
+              <h6 class="text-dark">vCISO</h6>
+            </div>
+          </div>
+        </a>
+      </div>
+      
+      <div class="column col-12 col-md-2 col-sm-4 col-xs-4 m-2 cta">
+        <a href="/pccm">
+          <div class="card card-link">
+            <div class="card-body text-center">
+              <div class="mb-2 services-icon-cta">
+                <img src="/assets/tabler-icons/icons/crosshair.svg" alt="Personal Cyber Crisis Management" />
+              </div>
+              <h6 class="text-dark">Personal Cyber Crisis Management</h6>
+            </div>
+          </div>
+        </a>
+      </div>
+      
+      <div class="column col-12 col-md-2 col-sm-4 col-xs-4 m-2 cta">
+        <a href="/due-dillegence">
+          <div class="card card-link">
+            <div class="card-body text-center">
+              <div class="mb-2 services-icon-cta">
+                <img src="/assets/tabler-icons/icons/checkup-list.svg" alt="Due Dillegence" />
+              </div>
+              <h6 class="text-dark">Due Dillegence</h6>
+            </div>
+          </div>
+        </a>
+      </div>
+      
+      <div class="column col-12 col-md-2 col-sm-4 col-xs-4 m-2 cta">
+        <a href="/investigations">
+          <div class="card card-link">
+            <div class="card-body text-center">
+              <div class="mb-2 services-icon-cta">
+                <img src="/assets/tabler-icons/icons/zoom-check.svg" alt="Investigations" />
+              </div>
+              <h6 class="text-dark">Investigations</h6>
+            </div>
+          </div>
+        </a>
+      </div>
+      
+      <div class="column col-12 col-md-2 col-sm-4 col-xs-4 m-2 cta">
+        <a href="/brand-hacking">
+          <div class="card card-link">
+            <div class="card-body text-center">
+              <div class="mb-2 services-icon-cta">
+                <img src="/assets/tabler-icons/icons/badge-tm.svg" alt="Brand Hacking" />
+              </div>
+              <h6 class="text-dark">Brand Hacking</h6>
+            </div>
+          </div>
+        </a>
+      </div>
+      
+
+    </div>
+  </div>
+</div>
+
+
+
+<style>
+
+  .cta {
+    width: min-content;
+  }
+  @media (max-width: 600px) {
+    .cta {
+      width: 100%;
+      flex: 1;
+    }
+  }
+
+  .services-icon-cta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .services-icon-cta img {
+    width: 3em;
+    height: 3em;
+    background-color: var(--services-bg);
+    border-radius: 10px;
+    padding: 10px;
+    position: absolute;
+    top: -40px;
+  }
+</style>
+
+
+</div>
+
+<style>
+  .post-image-container {
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 8px;
+  }
+
+  .post-cover-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  /* Fix for equal height post navigation */
+  .listfeaturedtag h2.card-title {
+    min-height: 3.5rem;
+    /* Adjust this value based on your font size */
+    display: flex;
+    align-items: center;
+  }
+
+  .previous-next {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #0d1315;
+  }
+</style>
+
+    
+<section class="container-full footer">
+  <svg id="anglesvg" viewBox="0 0 1440 60" xmlns="http://www.w3.org/2000/svg"><path d="M720 60l720-60H0z" fill="var(--body-bg)" /></svg>
+  <div class="container grid-xl footer-contents mb-0">
+    <div class="columns text-center">
+      <div class="column col-12">
+        <a href="http://localhost:4000">
+        <img style="max-width: 10%; min-width: 150px; opacity: 0.7;" src="/assets/logo-b.svg" alt="Logo" title="Decisive Resources"/>
+        </a>
+        <div class="footer-social my-4">
+            
+            <a href="https://www.linkedin.com/company/decisiveresources" target="_blank"><img class="icon-social" src="/assets/tabler-icons/icons/brand-linkedin.svg" alt="LinkedIn" title="LinkedIn"/></a>
+            
+
+            
+            <a href="https://www.x.com/DecisiveResources" target="_blank"><img class="icon-social" src="/assets/tabler-icons/icons/brand-twitter.svg" alt="X" title="X"/></a>
+            
+
+            
+            
+
+            
+            <a href="mailto:info@decisive-resources.com"><img class="icon-social" src="/assets/tabler-icons/icons/mail.svg" alt="Email" title="Email"/></a>
+            
+
+            
+            
+          </div>
+        <p>© 2025 All rights reserved | License: A11643701</p>
+        <p>A Wyoming LLC, Headquartered in Austin, TX, Global Presence</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script src="http://localhost:4000/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>         
+
+
+
+  </body>
+</html>

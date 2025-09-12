@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <meta charset="UTF-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <meta property="og:title" content="Decisive Resources">
+  <meta property="og:site_name" content="Decisive Resources">
+  <meta property="og:url" content="http://localhost:4000">
+  <meta property="og:description" content="A Bespoke Privacy Management and Consulting Firm">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="http://localhost:4000/assets/odin-meta.png">
+
+  <title>
+    
+      Blog - Page 5 | Decisive Resources
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/assets/css/fonts.css">
+  <link rel="stylesheet" href="/css/styles.css">
+  <link href="http://localhost:4000/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"> 
+
+  <!-- Preload critical icons -->
+  <link rel="preload" href="/assets/tabler-icons/icons/article.svg" as="image">
+  <link rel="preload" href="/assets/tabler-icons/icons/brand-linkedin.svg" as="image">
+  <link rel="preload" href="/assets/tabler-icons/icons/brand-twitter.svg" as="image">
+  <link rel="preload" href="/assets/tabler-icons/icons/mail.svg" as="image">
+
+  <!-- Icons -->
+  <link rel="shortcut icon" href="http://localhost:4000/icon/favicon.ico">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/atom+xml" title="Decisive Resources" href="atom.xml">
+</head>
+
+
+  <body>
+    <div class="header-bg">
+  <div class="container-full">
+    <div class="header ">
+      <nav class="container grid-xl navbar">
+  <div class="flex-vertical-center hide-sm">
+    <a style="width: 120px; background: transparent; border: none;" href="http://localhost:4000" class="logo">
+      <!-- <img style="max-width: 100%; border: none; display: block;" src="/assets/logo-b.svg" alt="Logo" title="Decisive Resources"/> -->
+    </a>
+  </div>
+  <div class="text-center show-sm">
+    <div class="navbar-toggle" onclick="toggleMenu()" style="font-size: 32px; padding: 10px; cursor: pointer;">
+      <img class="icon-menu" src="/assets/tabler-icons/icons/article.svg" alt="menu" title="Menu" id="menu-icon"/>
+    </div>
+  </div>
+  <ul class="main-nav" id="mobile-menu">
+    <div class="close-menu show-sm" onclick="toggleMenu()" style="position: absolute; top: 20px; right: 20px; font-size: 32px; color: white; cursor: pointer;">
+      <img class="icon-menu d-none" src="/assets/tabler-icons/icons/article.svg" alt="menu" title="Menu" id="menu-icon"/>
+    </div>
+    
+    <li class="mx-4">
+      <a  class="nav-links" href="/">Home</a>
+    </li>
+    
+    
+    <li class="mx-4">
+      <a  class="nav-links" href="/services">Services</a>
+    </li>
+    
+    
+    <li class="mx-4">
+      <a  class="nav-links" href="/about">About</a>
+    </li>
+    
+    
+    <li class="mx-4">
+      <a  class="nav-links" href="/blog">Blog</a>
+    </li>
+    
+    <li>
+      <a href="/consultation" style="height: auto;" class="btn btn-lg btn-outline-primary py-2">Get In Touch</a>
+    </li>
+  </ul>
+</nav>
+
+<script>
+function toggleMenu() {
+  const menu = document.getElementById('mobile-menu');
+  const menuIcon = document.getElementById('menu-icon');
+  menu.classList.toggle('active');
+  
+  // Change icon
+  if (menu.classList.contains('active')) {
+    menuIcon.className = 'icon-menu d-none';
+  } else {
+    menuIcon.className = 'icon-menu';
+  }
+}
+
+// Close menu when clicking outside
+document.addEventListener('click', function(event) {
+  const menu = document.getElementById('mobile-menu');
+  const toggle = document.querySelector('.navbar-toggle');
+  
+  if (menu.classList.contains('active') && !menu.contains(event.target) && !toggle.contains(event.target)) {
+    toggleMenu();
+  }
+});
+</script>
+
+
+      <header class="container grid-xl landing-header">
+        <div class="columns pt-12 pb-8">
+          <div class="column col-11 col-mx-auto text-center">
+            <a href="http://localhost:4000">
+            <img class="m-4" style="max-width: 10em; border: none;" src="/assets/logo-b.svg" alt="Logo" title="Decisive Resources"/>
+            </a>
+            <h1 class="mt-2 super-h1">Decisive Resources</h1>
+            <h4 class="text-secondary">A Bespoke Privacy Management and Consulting Firm</h4>
+          </div>
+        </div>
+      </header>
+    </div>
+  </div>
+</div>
+<div class="container-full">
+
+  <div class="container grid-xl">
+    <div class="columns negative-m-s">
+      <div class="column col-12">
+
+        <div class="card text-center mb-4">
+          <div class="card-body m-1">
+            
+            <h2 class="pt-2">
+              
+              Blog - Page 5
+            </h2>
+
+          </div>
+        </div>
+
+        <section class="recent-posts">
+
+    <div class="row listrecent">
+
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+
+    </div>
+
+</section>
+
+<!-- Pagination
+================================================== -->
+<div class="bottompagination my-3">
+  <div class="pointerup text-center">
+    <a href="#top">
+      <img src="/assets/tabler-icons/icons/caret-up.svg" alt="Arrow Up" title="Back to Top" />
+      </a>
+  </div>
+  <span class="navigation" role="navigation">
+      <hr>
+      
+      <div class="pagination">
+          
+              
+                  <a class="ml-1 mr-1" href="/blog/page4/">&laquo; Prev</a>
+              
+          
+
+          
+              
+                  <a class="ml-1 mr-1" href="/blog/">1</a>
+              
+          
+              
+                  <a class="ml-1 mr-1" href="/blog/page2/">2</a>
+              
+          
+
+          
+              <span>Next &raquo;</span>
+          
+      </div>
+      
+  </span>
+  
+</div>
+
+      </div>
+    </div>
+  </div>
+
+  
+<div class="column col-12 text-center mt-5">
+  <h4 class="mt-5">Need Help?</h4>
+</div>
+<div class="column col-12  col-mx-auto text-center pb-4">
+    <div class="col-12 text-center">
+        <a href="/consultation" class="btn-cta btn btn-outline-primary p-4 mb-2">Get In Touch</a>
+    </div>
+</div>
+
+<style>
+  .btn-cta {
+    line-height: 0 !important;
+  }
+</style>
+
+  <div class="container my-4">
+  <div class="container grid-xl">
+    <div class="columns justify-content-center">
+
+      
+      <div class="column col-12 col-md-2 col-sm-4 col-xs-4 m-2 cta">
+        <a href="/executive-privacy-management">
+          <div class="card card-link">
+            <div class="card-body text-center">
+              <div class="mb-2 services-icon-cta">
+                <img src="/assets/tabler-icons/icons/spy-off.svg" alt="Executive Privacy Management" />
+              </div>
+              <h6 class="text-dark">Executive Privacy Management</h6>
+            </div>
+          </div>
+        </a>
+      </div>
+      
+      <div class="column col-12 col-md-2 col-sm-4 col-xs-4 m-2 cta">
+        <a href="/vciso">
+          <div class="card card-link">
+            <div class="card-body text-center">
+              <div class="mb-2 services-icon-cta">
+                <img src="/assets/tabler-icons/icons/lock.svg" alt="vCISO" />
+              </div>
+              <h6 class="text-dark">vCISO</h6>
+            </div>
+          </div>
+        </a>
+      </div>
+      
+      <div class="column col-12 col-md-2 col-sm-4 col-xs-4 m-2 cta">
+        <a href="/pccm">
+          <div class="card card-link">
+            <div class="card-body text-center">
+              <div class="mb-2 services-icon-cta">
+                <img src="/assets/tabler-icons/icons/crosshair.svg" alt="Personal Cyber Crisis Management" />
+              </div>
+              <h6 class="text-dark">Personal Cyber Crisis Management</h6>
+            </div>
+          </div>
+        </a>
+      </div>
+      
+      <div class="column col-12 col-md-2 col-sm-4 col-xs-4 m-2 cta">
+        <a href="/due-dillegence">
+          <div class="card card-link">
+            <div class="card-body text-center">
+              <div class="mb-2 services-icon-cta">
+                <img src="/assets/tabler-icons/icons/checkup-list.svg" alt="Due Dillegence" />
+              </div>
+              <h6 class="text-dark">Due Dillegence</h6>
+            </div>
+          </div>
+        </a>
+      </div>
+      
+      <div class="column col-12 col-md-2 col-sm-4 col-xs-4 m-2 cta">
+        <a href="/investigations">
+          <div class="card card-link">
+            <div class="card-body text-center">
+              <div class="mb-2 services-icon-cta">
+                <img src="/assets/tabler-icons/icons/zoom-check.svg" alt="Investigations" />
+              </div>
+              <h6 class="text-dark">Investigations</h6>
+            </div>
+          </div>
+        </a>
+      </div>
+      
+      <div class="column col-12 col-md-2 col-sm-4 col-xs-4 m-2 cta">
+        <a href="/brand-hacking">
+          <div class="card card-link">
+            <div class="card-body text-center">
+              <div class="mb-2 services-icon-cta">
+                <img src="/assets/tabler-icons/icons/badge-tm.svg" alt="Brand Hacking" />
+              </div>
+              <h6 class="text-dark">Brand Hacking</h6>
+            </div>
+          </div>
+        </a>
+      </div>
+      
+
+    </div>
+  </div>
+</div>
+
+
+
+<style>
+
+  .cta {
+    width: min-content;
+  }
+  @media (max-width: 600px) {
+    .cta {
+      width: 100%;
+      flex: 1;
+    }
+  }
+
+  .services-icon-cta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .services-icon-cta img {
+    width: 3em;
+    height: 3em;
+    background-color: var(--services-bg);
+    border-radius: 10px;
+    padding: 10px;
+    position: absolute;
+    top: -40px;
+  }
+</style>
+
+
+</div>
+
+    
+<section class="container-full footer">
+  <svg id="anglesvg" viewBox="0 0 1440 60" xmlns="http://www.w3.org/2000/svg"><path d="M720 60l720-60H0z" fill="var(--body-bg)" /></svg>
+  <div class="container grid-xl footer-contents mb-0">
+    <div class="columns text-center">
+      <div class="column col-12">
+        <a href="http://localhost:4000">
+        <img style="max-width: 10%; min-width: 150px; opacity: 0.7;" src="/assets/logo-b.svg" alt="Logo" title="Decisive Resources"/>
+        </a>
+        <div class="footer-social my-4">
+            
+            <a href="https://www.linkedin.com/company/decisiveresources" target="_blank"><img class="icon-social" src="/assets/tabler-icons/icons/brand-linkedin.svg" alt="LinkedIn" title="LinkedIn"/></a>
+            
+
+            
+            <a href="https://www.x.com/DecisiveResources" target="_blank"><img class="icon-social" src="/assets/tabler-icons/icons/brand-twitter.svg" alt="X" title="X"/></a>
+            
+
+            
+            
+
+            
+            <a href="mailto:info@decisive-resources.com"><img class="icon-social" src="/assets/tabler-icons/icons/mail.svg" alt="Email" title="Email"/></a>
+            
+
+            
+            
+          </div>
+        <p>© 2025 All rights reserved | License: A11643701</p>
+        <p>A Wyoming LLC, Headquartered in Austin, TX, Global Presence</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script src="http://localhost:4000/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>         
+
+
+
+  </body>
+</html>

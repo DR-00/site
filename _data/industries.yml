@@ -1,0 +1,17 @@
+- name: "Executives"
+  icon: "briefcase"
+
+- name: "Security"
+  icon: "shield-half"
+
+- name: "Entertainment"
+  icon: "video"
+
+- name: "Legal"
+  icon: "file-text"
+
+- name: "Finance"
+  icon: "zoom-money"
+
+- name: "Government"
+  icon: "building-bridge-2"

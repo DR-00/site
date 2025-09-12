@@ -1,0 +1,70 @@
+<nav class="container grid-xl navbar">
+  <div class="flex-vertical-center hide-sm">
+    <a style="width: 120px; background: transparent; border: none;" href="{{ site.url }}{{ site.baseurl }}" class="logo">
+      <!-- <img style="max-width: 100%; border: none; display: block;" src="{{ '/assets/logo-b.svg' | relative_url }}" alt="Logo" title="{{ site.title }}"/> -->
+    </a>
+  </div>
+  <div class="text-center show-sm">
+    <div class="navbar-toggle" onclick="toggleMenu()" style="font-size: 32px; padding: 10px; cursor: pointer;">
+      <img class="icon-menu" src="/assets/tabler-icons/icons/article.svg" alt="menu" title="Menu" id="menu-icon"/>
+    </div>
+  </div>
+  <ul class="main-nav" id="mobile-menu">
+    <div class="close-menu show-sm" onclick="toggleMenu()" style="position: absolute; top: 20px; right: 20px; font-size: 32px; color: white; cursor: pointer;">
+      <img class="icon-menu d-none" src="/assets/tabler-icons/icons/article.svg" alt="menu" title="Menu" id="menu-icon"/>
+    </div>
+    {% if site.nav_item_one == null %}
+    {% else %}
+    <li class="mx-4">
+      <a  class="nav-links" href="{{ site.nav_item_one_link }}">{{ site.nav_item_one }}</a>
+    </li>
+    {% endif %}
+    {% if site.nav_item_two == null %}
+    {% else %}
+    <li class="mx-4">
+      <a  class="nav-links" href="{{ site.nav_item_two_link }}">{{ site.nav_item_two }}</a>
+    </li>
+    {% endif %}
+    {% if site.nav_item_three == null %}
+    {% else %}
+    <li class="mx-4">
+      <a  class="nav-links" href="{{ site.nav_item_three_link }}">{{ site.nav_item_three }}</a>
+    </li>
+    {% endif %}
+    {% if site.nav_item_four == null %}
+    {% else %}
+    <li class="mx-4">
+      <a  class="nav-links" href="{{ site.nav_item_four_link }}">{{ site.nav_item_four }}</a>
+    </li>
+    {% endif %}
+    <li>
+      <a href="{{ site.nav_button_link }}" style="height: auto;" class="btn btn-lg btn-outline-primary py-2">{{ site.nav_button }}</a>
+    </li>
+  </ul>
+</nav>
+
+<script>
+function toggleMenu() {
+  const menu = document.getElementById('mobile-menu');
+  const menuIcon = document.getElementById('menu-icon');
+  menu.classList.toggle('active');
+  
+  // Change icon
+  if (menu.classList.contains('active')) {
+    menuIcon.className = 'icon-menu d-none';
+  } else {
+    menuIcon.className = 'icon-menu';
+  }
+}
+
+// Close menu when clicking outside
+document.addEventListener('click', function(event) {
+  const menu = document.getElementById('mobile-menu');
+  const toggle = document.querySelector('.navbar-toggle');
+  
+  if (menu.classList.contains('active') && !menu.contains(event.target) && !toggle.contains(event.target)) {
+    toggleMenu();
+  }
+});
+</script>
+

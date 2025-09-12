@@ -1,0 +1,44 @@
+
+<section class="container-full footer">
+  <svg id="anglesvg" viewBox="0 0 1440 60" xmlns="http://www.w3.org/2000/svg"><path d="M720 60l720-60H0z" fill="var(--body-bg)" /></svg>
+  <div class="container grid-xl footer-contents mb-0">
+    <div class="columns text-center">
+      <div class="column col-12">
+        <a href="{{ site.url }}{{ site.baseurl }}">
+        <img style="max-width: 10%; min-width: 150px; opacity: 0.7;" src="{{ site.baseurl }}/assets/{{ site.brand_logo }}" alt="Logo" title="{{ site.title }}"/>
+        </a>
+        <div class="footer-social my-4">
+            {% if site.linkedin_page == null %}
+            {% else %}
+            <a href="{{ site.linkedin_page}}" target="_blank"><img class="icon-social" src="/assets/tabler-icons/icons/brand-linkedin.svg" alt="LinkedIn" title="LinkedIn"/></a>
+            {% endif %}
+
+            {% if site.twitter_username == null %}
+            {% else %}
+            <a href="https://www.x.com/{{ site.twitter_username }}" target="_blank"><img class="icon-social" src="/assets/tabler-icons/icons/brand-twitter.svg" alt="X" title="X"/></a>
+            {% endif %}
+
+            {% if site.facebook_page == null %}
+            {% else %}
+            <a href="https://www.facebook.com/{{ site.facebook_page}}" target="_blank"><img class="icon-social" src="/assets/tabler-icons/icons/brand-facebook.svg" alt="Facebook" title="Facebook"/></a>
+            {% endif %}
+
+            {% if site.email == null %}
+            {% else %}
+            <a href="mailto:{{ site.email }}"><img class="icon-social" src="/assets/tabler-icons/icons/mail.svg" alt="Email" title="Email"/></a>
+            {% endif %}
+
+            {% if site.instagram_username == null %}
+            {% else %}
+            <a href="http://instagram.com/{{site.instagram_username}}" target="_blank"><img class="icon-social" src="/assets/tabler-icons/icons/brand-instagram.svg" alt="Instagram" title="Instagram"/></a>
+            {% endif %}
+          </div>
+        <p>© 20{{ site.time | date: '%y' }} All rights reserved | License: A11643701</p>
+        <p>A Wyoming LLC, Headquartered in Austin, TX, Global Presence</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script src="{{ site.url }}{{ site.baseurl }}/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>         
+

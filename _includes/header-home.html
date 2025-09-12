@@ -1,0 +1,18 @@
+<div class="header-bg">
+  <div class="container-full">
+    <div class="header ">
+      {% include nav.html %}
+      <header class="container grid-xl landing-header">
+        <div class="columns pt-12 pb-8">
+          <div class="column col-11 col-mx-auto text-center">
+            <a href="{{ site.url }}{{ site.baseurl }}">
+            <img class="m-4" style="max-width: 10em; border: none;" src="{{ '/assets/logo-b.svg' | relative_url }}" alt="Logo" title="{{ site.title }}"/>
+            </a>
+            <h1 class="mt-2 super-h1">{{ site.header }}</h1>
+            <h4 class="text-secondary">{{ site.subheader }}</h4>
+          </div>
+        </div>
+      </header>
+    </div>
+  </div>
+</div>

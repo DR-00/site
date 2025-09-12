@@ -1,0 +1,120 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+#
+# If you need help with YAML syntax, here are some quick references for you: 
+# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
+# https://learnxinyminutes.com/docs/yaml/
+#
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+
+title: Decisive Resources
+tagline: Home
+description: A Bespoke Privacy Management and Consulting Firm
+baseurl: "" # the subpath of your site, e.g. /support
+url: https://www.decisiveresources.com # the base hostname AND PROTOCOL for your site, e.g. http://example.com
+permalink: /:title
+
+content_type: Privacy Management and Consulting
+use_authors: true
+
+# Authors
+authors:
+    Mishaal:
+      display_name: Mishaal Khan    
+      avatar: 'assets/img/m.jpg'
+      web: https://www.MishaalKhan.com
+      linkedin: https://www.linkedin.com/in/mish-aal/
+      description: "vCISO, Ethical Hacker, Privacy Consultant, OSINT Investigator"
+    Luke:
+      display_name: Luke Sloan    
+      avatar: 'assets/img/l-small.jpg'
+      web: https://www.decisiveresources.com
+      linkedin: https://www.linkedin.com/in/luke-sloan-4013731/
+      description: "vCISO, Ethical Hacker, Privacy Consultant, OSINT Investigator"
+    DR:
+      display_name: Decisive Resources    
+      avatar: 'assets/img/logo-b.svg'
+      web: https://www.decisiveresources.com
+      linkedin: https://www.linkedin.com/company/decisiveresources/
+      description: "A Bespoke Privacy Management and Consulting Firm"
+
+
+
+brand_logo: logo-b.svg
+brand_name: Decisive Resources
+header: Decisive Resources
+subheader: A Bespoke Privacy Management and Consulting Firm
+
+meta_image: odin-meta.png
+
+# Social Links
+twitter_username: DecisiveResources
+facebook_page:
+github_username: 
+linkedin_page: https://www.linkedin.com/company/decisiveresources
+email: info@decisive-resources.com
+instagram_username: 
+
+
+# Navivation
+nav_item_one: Home
+nav_item_one_link: /
+
+nav_item_two: Services
+nav_item_two_link: /services
+
+nav_item_three: About
+nav_item_three_link: /about
+
+nav_item_four: Blog
+nav_item_four_link: /blog
+
+nav_button: Get In Touch
+nav_button_link: /consultation
+
+
+
+# Build settings
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-last-modified-at
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-archives
+
+# Pagination 
+paginate: 9
+paginate_path: /page:num/
+posts_per_page: 6
+
+# Performance
+lazyimages: disabled
+
+
+# Exclude from processing.
+# The following items will not be processed, by default.
+# Any item listed under the `exclude:` key here will be automatically added to
+# the internal "default list".
+#
+# Excluded items can be processed by explicitly listing the directories or
+# their entries' file path in the `include:` list.
+#
+exclude: [changelog.md, LICENSE.txt, README.md, Gemfile, Gemfile.lock]
+
+
+sass:
+  sass_dir:          _scss
+  style:            :compressed

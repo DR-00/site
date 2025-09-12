@@ -1,0 +1,30 @@
+- name: "Executive Privacy Management"
+  description: "A holistic privacy strategy development and implementation for individuals and organizations seeking to protect personal information and maintain digital sovereignty."
+  icon: "spy-off"
+  link: "/executive-privacy-management"
+
+- name: "vCISO"
+  description: "Virtual CISO consultancy to augment and lead your digital security initiatives with risk management, penetration testing, and policy development."
+  icon: "lock"
+  link: "/vciso"
+
+- name: "Personal Cyber Crisis Management"
+  description: "A data‑driven SEO service that elevates your brand by placing authoritative content at the top of Google while pushing unwanted results down to later pages."
+  icon: "crosshair"
+  link: "/pccm"
+
+- name: "Due Dillegence"
+  description: "Providing due dillegence, background investigations, and strategic intelligence and analysis to help clients make informed decisions."
+  icon: "checkup-list"
+  link: "/due-dillegence"
+
+- name: "Investigations"
+  description: "Blending open‑source intel, expert surveillance, and certified investigators to deliver rapid, in‑depth digital forensics and threat‑hunting for precise target profiling."
+  icon: "zoom-check"
+  link: "/investigations"
+
+
+- name: "Brand Hacking"
+  description: "A data‑driven SEO service that elevates your brand by placing authoritative content at the top of Google while pushing unwanted results down to later pages."
+  icon: "badge-tm"
+  link: "/brand-hacking"

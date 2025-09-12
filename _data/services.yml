@@ -1,0 +1,14 @@
+- name: "Privacy"
+  description: "A holistic privacy strategy development and implementation for individuals and organizations seeking to protect personal information and maintain digital sovereignty."
+  icon: "shield-half"
+  link: "/services"
+
+- name: "Intelligence"
+  description: "Providing due dillegence, background investigations, and strategic intelligence and analysis to help clients make informed decisions."
+  icon: "zoom-check"
+  link: "/services"
+
+- name: "Cybersecurity"
+  description: "Virtual CISO consultancy to augment and lead your digital security initiatives with risk management, penetration testing, and policy development."
+  icon: "lock"
+  link: "/services"

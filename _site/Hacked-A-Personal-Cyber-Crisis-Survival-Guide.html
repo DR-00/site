@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <meta charset="UTF-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <meta property="og:title" content="Decisive Resources">
+  <meta property="og:site_name" content="Decisive Resources">
+  <meta property="og:url" content="http://localhost:4000">
+  <meta property="og:description" content="A Bespoke Privacy Management and Consulting Firm">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="http://localhost:4000/assets/odin-meta.png">
+
+  <title>
+    
+      Hacked? | Decisive Resources
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/assets/css/fonts.css">
+  <link rel="stylesheet" href="/css/styles.css">
+  <link href="http://localhost:4000/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"> 
+
+  <!-- Preload critical icons -->
+  <link rel="preload" href="/assets/tabler-icons/icons/article.svg" as="image">
+  <link rel="preload" href="/assets/tabler-icons/icons/brand-linkedin.svg" as="image">
+  <link rel="preload" href="/assets/tabler-icons/icons/brand-twitter.svg" as="image">
+  <link rel="preload" href="/assets/tabler-icons/icons/mail.svg" as="image">
+
+  <!-- Icons -->
+  <link rel="shortcut icon" href="http://localhost:4000/icon/favicon.ico">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/atom+xml" title="Decisive Resources" href="atom.xml">
+</head>
+
+
+  <body>
+    <div class="header-bg">
+  <div class="container-full">
+    <div class="header ">
+      <nav class="container grid-xl navbar">
+  <div class="flex-vertical-center hide-sm">
+    <a style="width: 120px; background: transparent; border: none;" href="http://localhost:4000" class="logo">
+      <!-- <img style="max-width: 100%; border: none; display: block;" src="/assets/logo-b.svg" alt="Logo" title="Decisive Resources"/> -->
+    </a>
+  </div>
+  <div class="text-center show-sm">
+    <div class="navbar-toggle" onclick="toggleMenu()" style="font-size: 32px; padding: 10px; cursor: pointer;">
+      <img class="icon-menu" src="/assets/tabler-icons/icons/article.svg" alt="menu" title="Menu" id="menu-icon"/>
+    </div>
+  </div>
+  <ul class="main-nav" id="mobile-menu">
+    <div class="close-menu show-sm" onclick="toggleMenu()" style="position: absolute; top: 20px; right: 20px; font-size: 32px; color: white; cursor: pointer;">
+      <img class="icon-menu d-none" src="/assets/tabler-icons/icons/article.svg" alt="menu" title="Menu" id="menu-icon"/>
+    </div>
+    
+    <li class="mx-4">
+      <a  class="nav-links" href="/">Home</a>
+    </li>
+    
+    
+    <li class="mx-4">
+      <a  class="nav-links" href="/services">Services</a>
+    </li>
+    
+    
+    <li class="mx-4">
+      <a  class="nav-links" href="/about">About</a>
+    </li>
+    
+    
+    <li class="mx-4">
+      <a  class="nav-links" href="/blog">Blog</a>
+    </li>
+    
+    <li>
+      <a href="/consultation" style="height: auto;" class="btn btn-lg btn-outline-primary py-2">Get In Touch</a>
+    </li>
+  </ul>
+</nav>
+
+<script>
+function toggleMenu() {
+  const menu = document.getElementById('mobile-menu');
+  const menuIcon = document.getElementById('menu-icon');
+  menu.classList.toggle('active');
+  
+  // Change icon
+  if (menu.classList.contains('active')) {
+    menuIcon.className = 'icon-menu d-none';
+  } else {
+    menuIcon.className = 'icon-menu';
+  }
+}
+
+// Close menu when clicking outside
+document.addEventListener('click', function(event) {
+  const menu = document.getElementById('mobile-menu');
+  const toggle = document.querySelector('.navbar-toggle');
+  
+  if (menu.classList.contains('active') && !menu.contains(event.target) && !toggle.contains(event.target)) {
+    toggleMenu();
+  }
+});
+</script>
+
+
+      <header class="container grid-xl landing-header">
+        <div class="columns pt-12 pb-8">
+          <div class="column col-11 col-mx-auto text-center">
+            <a href="http://localhost:4000">
+            <img class="m-4" style="max-width: 10em; border: none;" src="/assets/logo-b.svg" alt="Logo" title="Decisive Resources"/>
+            </a>
+            <h1 class="mt-2 super-h1">Decisive Resources</h1>
+            <h4 class="text-secondary">A Bespoke Privacy Management and Consulting Firm</h4>
+          </div>
+        </div>
+      </header>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container-full">
+  <div class="container grid-xl">
+
+    <div class="columns negative-m-s">
+      <div class="column col-12">
+        <div class="card text-center mb-4">
+          <div class="card-body m-1">
+            
+            <h2 class="pt-2">
+              Hacked?
+            </h2>
+            <h4 class="pt-2 text-secondary pb-3">
+              A Personal Cyber Crisis Survival Guide
+            </h4>
+
+            
+            <div class="post-image-container">
+              <img class="post-cover-image" src="/assets/post-images/need-a-ciso.jpg" alt="Hacked?"
+                title="Hacked?" />
+            </div>
+            
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+    <div class="columns">
+
+      <div class="column col-12">
+        <div class="card">
+          <div class="card-body p-3 p-md-5">
+            
+            <div class="flex-vertical-center mb-4">
+              <figure class="avatar d-inline-block" style="align-items: center;">
+                <img src="/assets/img/l-small.jpg" alt="...">
+              </figure>
+              <div class="ml-2">
+                <p class="text-dark text-small mb-0">Written by <span class="text-primary">Luke Sloan</span></p>
+                <p class="text-dark text-small text-italic mb-0">15 Jan 2025</p>
+              </div>
+            </div>
+
+            <hr />
+
+<p>It starts suddenly. Your phone stops working. Your email logs you out. Your bank account shows transactions you didn’t make. Your smart home locks you out, and your car won’t start.<br />
+You’ve been hacked. Not just a device, your life.</p>
+
+<p>This is what a full-spectrum personal cyber attack looks like. It’s rare, but when it happens, it’s devastating. And in today’s hyper-connected world, no one is immune, especially high-net-worth individuals, executives, and public figures.</p>
+
+<p>Here’s what you need to know, and do, immediately.</p>
+
+<hr />
+
+<h3 id="signs-youre-under-a-full-scale-personal-cyber-attack">Signs You’re Under a Full-Scale Personal Cyber Attack</h3>
+
+<ul>
+  <li>Your phone is disabled or acting erratically</li>
+  <li>Accounts (email, social media, banking) are locked or accessed without your input</li>
+  <li>You receive password reset notifications you didn’t request</li>
+  <li>Your smart home devices misbehave or lock you out</li>
+  <li>Your vehicle won’t respond to your commands</li>
+  <li>Friends or colleagues report strange messages from your accounts</li>
+  <li>Bank or crypto accounts show unauthorized activity</li>
+</ul>
+
+<hr />
+
+<h3 id="immediate-action-steps">Immediate Action Steps</h3>
+
+<p>In a true crisis, time is your enemy. Every second matters. Follow this protocol:</p>
+
+<h4 id="1-go-offline-immediately">1. <strong>Go Offline Immediately</strong></h4>
+
+<p>Disable Wi-Fi, Bluetooth, and mobile data on all devices. Unplug your home router. If you have reason to believe your phone is compromised, power it down and remove the SIM.</p>
+
+<h4 id="2-stop-using-compromised-devices">2. <strong>Stop Using Compromised Devices</strong></h4>
+
+<p>Do not attempt to log in to accounts or reset passwords on compromised phones or computers. This can tip off the attacker and further expose you.</p>
+
+<h4 id="3-get-to-a-clean-safe-environment">3. <strong>Get to a Clean, Safe Environment</strong></h4>
+
+<p>Use a secure backup device or trusted contact’s device to begin recovery. Avoid using public Wi-Fi or unfamiliar networks.</p>
+
+<h4 id="4-lock-down-financial-accounts">4. <strong>Lock Down Financial Accounts</strong></h4>
+
+<p>Contact your bank, credit card companies, and investment institutions. Freeze or suspend access immediately.</p>
+
+<h4 id="5-alert-key-contacts">5. <strong>Alert Key Contacts</strong></h4>
+
+<p>Notify your attorney, family, and trusted advisors. Let them know you may be impersonated and not to trust unusual messages or requests.</p>
+
+<h4 id="6-do-not-engage-the-hacker">6. <strong>Do Not Engage the Hacker</strong></h4>
+
+<p>Whether it’s blackmail, demands, or threats, do not reply. Every communication gives them more data.</p>
+
+<h4 id="7-call-in-professional-help">7. <strong>Call in Professional Help</strong></h4>
+
+<p>This is where we come in.</p>
+
+<hr />
+
+<h3 id="why-you-need-personal-cyber-crisis-management">Why You Need Personal Cyber Crisis Management</h3>
+
+<p>When your life has been digitally hijacked, you don’t need a helpdesk, you need a strike team.</p>
+
+<p>Our Personal Cyber Crisis Management service offers:</p>
+
+<ul>
+  <li>24/7 Emergency Response</li>
+  <li>Secure Device Forensics and Recovery</li>
+  <li>Digital Identity Restoration</li>
+  <li>Threat Attribution and Tracking</li>
+  <li>Law Enforcement Coordination</li>
+  <li>Civil and Criminal Evidence Collection</li>
+  <li>Privacy Rebuild: Home, Devices, Accounts, Vehicles</li>
+</ul>
+
+<p>We don’t just clean up, we counterstrike. We identify the actors, build prosecutable cases, and restore your control.</p>
+
+<p>Most importantly, we design a hardened privacy and cyber perimeter to ensure it never happens again.</p>
+
+<hr />
+
+<h3 id="you-dont-rise-to-the-occasion-you-fall-to-the-level-of-your-preparedness">You Don’t Rise to the Occasion, You Fall to the Level of Your Preparedness</h3>
+
+<p>Cyber attacks like these are rare, until they aren’t.<br />
+You can’t afford to figure this out as you go. If you’re a high-value target, be ready before it happens.</p>
+
+<p>We are your contingency plan.</p>
+
+<p><a href="/pccm/"><strong>Decisive Resources – Personal Cyber Crisis Management</strong></a><br />
+When it’s your life on the line, we don’t troubleshoot. We take action.</p>
+
+
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Previous and Next Post Navigation -->
+      <div class="column col-12 mt-4">
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+
+        
+        
+
+        
+
+        <div class="row pb-5">
+          
+          <div class="column col-12 col-md-6 my-4">
+            <h4 class="previous-next">Previous Post</h4>
+            
+            <!-- begin post -->
+
+
+
+<div class="col-12 my-1 my-md-2 h-100">
+    <div class="listfeaturedtag h-100">
+        <div class="row h-100">
+            <div class="col-12 col-md-12 col-lg-5 pr-lg-0">
+                <div class="h-100">
+                    <div class="wrapthumbnail">
+                        <a href="/Why-Every-Family-Office-Needs-a-vCISO" aria-label="Read More">
+                            
+                            <img class="featured-box-img-cover" alt="Featured Image" src="/assets/post-images/need-a-ciso.jpg">
+                            
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-12 col-lg-7">
+                <div class="h-100 card-group">
+                    <div class="card">
+                        <div class="card-body">
+                            <h2 class="card-title">
+                                <a href="/Why-Every-Family-Office-Needs-a-vCISO">Why Every Family Office Needs a vCISO</a>
+                            </h2>
+                            <h4 class="card-subtitle text-secondary"></h4>
+                            <h4 class="card-text">This article explains why every family office now needs a Virtual Chief Information Security Officer (vCISO). It details the unique cyber risks facing high-net-worth families,...</h4>
+                        </div>
+                        <div class="card-footer b-0 bg-white mt-auto">
+                            <div class="wrapfooter">
+                                
+                                <span class="meta-footer-thumb">
+                                
+                                <img class="author-thumb" src="/assets/img/m.jpg" alt="Mishaal Khan">
+                                
+                                </span>
+                                <span class="author-meta">
+                                <span class="post-name"><a target="_blank" href="https://www.MishaalKhan.com">Mishaal Khan</a></span><br/>
+                                
+                                <span class="post-date">20 Jan 2024</span>
+                                </span>
+                                <span class="post-read-more"><a href="/Why-Every-Family-Office-Needs-a-vCISO" title="Read Story"><svg class="svgIcon-use" width="25" height="25" viewbox="0 0 25 25"><path d="M19 6c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v14.66h.012c.01.103.045.204.12.285a.5.5 0 0 0 .706.03L12.5 16.85l5.662 4.126a.508.508 0 0 0 .708-.03.5.5 0 0 0 .118-.285H19V6zm-6.838 9.97L7 19.636V6c0-.55.45-1 1-1h9c.55 0 1 .45 1 1v13.637l-5.162-3.668a.49.49 0 0 0-.676 0z" fill-rule="evenodd"></path></svg></a></span>
+                                <div class="clearfix"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end post -->
+
+
+
+<style>
+
+
+
+</style>
+          </div>
+          
+
+          
+          <div class="column col-12 col-md-6 my-4">
+            <h4 class="previous-next">Next Post</h4>
+            
+            <!-- begin post -->
+
+
+
+<div class="col-12 my-1 my-md-2 h-100">
+    <div class="listfeaturedtag h-100">
+        <div class="row h-100">
+            <div class="col-12 col-md-12 col-lg-5 pr-lg-0">
+                <div class="h-100">
+                    <div class="wrapthumbnail">
+                        <a href="/What-You-Must-Keep-Private-The-High-Value-Targets-in-Your-Personal-Life" aria-label="Read More">
+                            
+                            <img class="featured-box-img-cover" alt="Featured Image" src="/assets/post-images/family.jpg">
+                            
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-12 col-lg-7">
+                <div class="h-100 card-group">
+                    <div class="card">
+                        <div class="card-body">
+                            <h2 class="card-title">
+                                <a href="/What-You-Must-Keep-Private-The-High-Value-Targets-in-Your-Personal-Life">What You Must Keep Private</a>
+                            </h2>
+                            <h4 class="card-subtitle text-secondary">The High-Value Targets in Your Personal Life</h4>
+                            <h4 class="card-text">This article details the most critical personal information high-profile individuals must keep private—such as home addresses, vehicles, and children's schools—and explains how these high-value targets...</h4>
+                        </div>
+                        <div class="card-footer b-0 bg-white mt-auto">
+                            <div class="wrapfooter">
+                                
+                                <span class="meta-footer-thumb">
+                                
+                                <img class="author-thumb" src="/assets/img/l-small.jpg" alt="Luke Sloan">
+                                
+                                </span>
+                                <span class="author-meta">
+                                <span class="post-name"><a target="_blank" href="https://www.decisiveresources.com">Luke Sloan</a></span><br/>
+                                
+                                <span class="post-date">05 Feb 2025</span>
+                                </span>
+                                <span class="post-read-more"><a href="/What-You-Must-Keep-Private-The-High-Value-Targets-in-Your-Personal-Life" title="Read Story"><svg class="svgIcon-use" width="25" height="25" viewbox="0 0 25 25"><path d="M19 6c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v14.66h.012c.01.103.045.204.12.285a.5.5 0 0 0 .706.03L12.5 16.85l5.662 4.126a.508.508 0 0 0 .708-.03.5.5 0 0 0 .118-.285H19V6zm-6.838 9.97L7 19.636V6c0-.55.45-1 1-1h9c.55 0 1 .45 1 1v13.637l-5.162-3.668a.49.49 0 0 0-.676 0z" fill-rule="evenodd"></path></svg></a></span>
+                                <div class="clearfix"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end post -->
+
+
+
+<style>
+
+
+
+</style>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+
+  </div>
+  
+<div class="column col-12 text-center mt-5">
+  <h4 class="mt-5">Need Help?</h4>
+</div>
+<div class="column col-12  col-mx-auto text-center pb-4">
+    <div class="col-12 text-center">
+        <a href="/consultation" class="btn-cta btn btn-outline-primary p-4 mb-2">Get In Touch</a>
+    </div>
+</div>
+
+<style>
+  .btn-cta {
+    line-height: 0 !important;
+  }
+</style>
+
+  <div class="container my-4">
+  <div class="container grid-xl">
+    <div class="columns justify-content-center">
+
+      
+      <div class="column col-12 col-md-2 col-sm-4 col-xs-4 m-2 cta">
+        <a href="/executive-privacy-management">
+          <div class="card card-link">
+            <div class="card-body text-center">
+              <div class="mb-2 services-icon-cta">
+                <img src="/assets/tabler-icons/icons/spy-off.svg" alt="Executive Privacy Management" />
+              </div>
+              <h6 class="text-dark">Executive Privacy Management</h6>
+            </div>
+          </div>
+        </a>
+      </div>
+      
+      <div class="column col-12 col-md-2 col-sm-4 col-xs-4 m-2 cta">
+        <a href="/vciso">
+          <div class="card card-link">
+            <div class="card-body text-center">
+              <div class="mb-2 services-icon-cta">
+                <img src="/assets/tabler-icons/icons/lock.svg" alt="vCISO" />
+              </div>
+              <h6 class="text-dark">vCISO</h6>
+            </div>
+          </div>
+        </a>
+      </div>
+      
+      <div class="column col-12 col-md-2 col-sm-4 col-xs-4 m-2 cta">
+        <a href="/pccm">
+          <div class="card card-link">
+            <div class="card-body text-center">
+              <div class="mb-2 services-icon-cta">
+                <img src="/assets/tabler-icons/icons/crosshair.svg" alt="Personal Cyber Crisis Management" />
+              </div>
+              <h6 class="text-dark">Personal Cyber Crisis Management</h6>
+            </div>
+          </div>
+        </a>
+      </div>
+      
+      <div class="column col-12 col-md-2 col-sm-4 col-xs-4 m-2 cta">
+        <a href="/due-dillegence">
+          <div class="card card-link">
+            <div class="card-body text-center">
+              <div class="mb-2 services-icon-cta">
+                <img src="/assets/tabler-icons/icons/checkup-list.svg" alt="Due Dillegence" />
+              </div>
+              <h6 class="text-dark">Due Dillegence</h6>
+            </div>
+          </div>
+        </a>
+      </div>
+      
+      <div class="column col-12 col-md-2 col-sm-4 col-xs-4 m-2 cta">
+        <a href="/investigations">
+          <div class="card card-link">
+            <div class="card-body text-center">
+              <div class="mb-2 services-icon-cta">
+                <img src="/assets/tabler-icons/icons/zoom-check.svg" alt="Investigations" />
+              </div>
+              <h6 class="text-dark">Investigations</h6>
+            </div>
+          </div>
+        </a>
+      </div>
+      
+      <div class="column col-12 col-md-2 col-sm-4 col-xs-4 m-2 cta">
+        <a href="/brand-hacking">
+          <div class="card card-link">
+            <div class="card-body text-center">
+              <div class="mb-2 services-icon-cta">
+                <img src="/assets/tabler-icons/icons/badge-tm.svg" alt="Brand Hacking" />
+              </div>
+              <h6 class="text-dark">Brand Hacking</h6>
+            </div>
+          </div>
+        </a>
+      </div>
+      
+
+    </div>
+  </div>
+</div>
+
+
+
+<style>
+
+  .cta {
+    width: min-content;
+  }
+  @media (max-width: 600px) {
+    .cta {
+      width: 100%;
+      flex: 1;
+    }
+  }
+
+  .services-icon-cta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .services-icon-cta img {
+    width: 3em;
+    height: 3em;
+    background-color: var(--services-bg);
+    border-radius: 10px;
+    padding: 10px;
+    position: absolute;
+    top: -40px;
+  }
+</style>
+
+
+</div>
+
+<style>
+  .post-image-container {
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 8px;
+  }
+
+  .post-cover-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  /* Fix for equal height post navigation */
+  .listfeaturedtag h2.card-title {
+    min-height: 3.5rem;
+    /* Adjust this value based on your font size */
+    display: flex;
+    align-items: center;
+  }
+
+  .previous-next {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #0d1315;
+  }
+</style>
+
+    
+<section class="container-full footer">
+  <svg id="anglesvg" viewBox="0 0 1440 60" xmlns="http://www.w3.org/2000/svg"><path d="M720 60l720-60H0z" fill="var(--body-bg)" /></svg>
+  <div class="container grid-xl footer-contents mb-0">
+    <div class="columns text-center">
+      <div class="column col-12">
+        <a href="http://localhost:4000">
+        <img style="max-width: 10%; min-width: 150px; opacity: 0.7;" src="/assets/logo-b.svg" alt="Logo" title="Decisive Resources"/>
+        </a>
+        <div class="footer-social my-4">
+            
+            <a href="https://www.linkedin.com/company/decisiveresources" target="_blank"><img class="icon-social" src="/assets/tabler-icons/icons/brand-linkedin.svg" alt="LinkedIn" title="LinkedIn"/></a>
+            
+
+            
+            <a href="https://www.x.com/DecisiveResources" target="_blank"><img class="icon-social" src="/assets/tabler-icons/icons/brand-twitter.svg" alt="X" title="X"/></a>
+            
+
+            
+            
+
+            
+            <a href="mailto:info@decisive-resources.com"><img class="icon-social" src="/assets/tabler-icons/icons/mail.svg" alt="Email" title="Email"/></a>
+            
+
+            
+            
+          </div>
+        <p>© 2025 All rights reserved | License: A11643701</p>
+        <p>A Wyoming LLC, Headquartered in Austin, TX, Global Presence</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script src="http://localhost:4000/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>         
+
+
+
+  </body>
+</html>

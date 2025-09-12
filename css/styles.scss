@@ -1,0 +1,225 @@
+---
+# Front matter comment to ensure Jekyll properly reads file.
+---
+
+// Variables and mixins
+@import "../_scss/variables";
+@import "../_scss/mixins";
+
+/*! Spectre.css v#{$version} | MIT License | github.com/picturepan2/spectre */
+// Reset and dependencies
+@import "../_scss/normalize";
+@import "../_scss/base";
+
+// Elements
+@import "../_scss/typography";
+@import "../_scss/buttons";
+@import "../_scss/codes";
+@import "../_scss/media";
+
+// Layout
+@import "../_scss/layout";
+@import "../_scss/navbar";
+@import "../_scss/footer";
+
+// ../_scss
+@import "../_scss/avatars";
+@import "../_scss/cards";
+@import "../_scss/menus";
+@import "../_scss/navs";
+
+@import "../_scss/landing";
+
+// Utility classes
+@import "../_scss/utilities";
+
+body {
+  background-color: var(--body-bg) !important;
+}
+
+#anglesvg {
+  display: block;
+}
+
+.icon-menu {
+  width: 2em;
+  height: 2em;
+  filter: brightness(0) saturate(100%) invert(55%) sepia(50%) saturate(1947%) hue-rotate(159deg) brightness(90%) contrast(108%);
+}
+.icon-social {
+  width: 1em;
+  height: 1em;
+  margin-right: 0.5em;
+  margin-left: 0.5em;
+  filter: brightness(0) saturate(100%) invert(55%) sepia(50%) saturate(1947%) hue-rotate(159deg) brightness(90%) contrast(108%);
+}
+// Equal height cards
+.card-link {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none !important;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+.card-link .card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-link .card-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card-link .card-body p {
+  flex-grow: 1;
+}
+
+// SVG color filters
+.icon-tabler {
+  filter: brightness(0) saturate(100%) invert(55%) sepia(50%) saturate(1947%) hue-rotate(159deg) brightness(90%) contrast(108%);
+}
+
+ol, ul {
+  padding-left: 0px !important;
+}
+
+.maxthumb {
+  max-height: 300px;
+  overflow: hidden;
+}
+
+
+.listfeaturedtag {
+  border: 1px solid var(--border-light);
+  border-radius: .25rem;
+  transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+  background-color: var(--card-bg);
+}
+
+.listfeaturedtag .wrapthumbnail {
+  height: 290px;
+  flex: 0 0 auto;
+  height: 100%;
+}
+
+.featured-box-img-cover {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  max-height: 100%;
+}
+
+.listfeaturedtag .card, .card-footer {
+border: 0;
+}
+
+.listfeaturedtag h2.card-title, .listrecent h2.card-title {
+font-size: 1.1rem;
+font-weight: 700;
+line-height: 1.25;
+}
+
+.listfeaturedtag h4.card-text, .listrecent h4.card-text {
+color: var(--text-secondary);
+font-size: 0.7rem;
+line-height: 1.5;
+font-weight: 400;
+font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+.wrapfooter {
+font-size: .7rem;
+display: flex;
+align-items: center;
+/* margin-bottom: 15px; */
+}
+
+span.post-name a, span.post-read-more a:hover {
+color: var(--text-primary);
+}
+span.post-date, span.post-read {
+color: var(--text-secondary);
+}
+.author-meta {
+flex: 1 1 auto;
+white-space: nowrap !important;
+text-overflow: ellipsis !important;
+overflow: hidden !important;
+}
+
+.author-thumb {
+width: 40px;
+height: 40px;
+margin-right: 13px;
+border-radius: 100%;
+}
+@media (max-width:991px) {
+  .featured-box-img-cover {
+      height: auto;
+      width: 100%;
+  }
+}
+@media (max-width:999px) {
+  .featured-box-img-cover {
+      height: 359px;
+  }
+}
+.card-subtitle {
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: var(--text-muted);
+  }
+
+// Pagination styles
+.pagination {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+// Responsive video container
+.responsive-video {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; // 16:9 aspect ratio
+  height: 0;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 2px 12px var(--shadow-video);
+}
+
+.responsive-video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+}
+
+.img-fluid {
+  border-radius: 5px;
+}
+
+.pointerup img {
+  position: relative;
+  top: 36px;
+  width: 2em;
+
+}
+
+.icon-services-page {
+  width: 1em;
+  height: 1em;
+  filter: brightness(0) saturate(100%) invert(87%) sepia(5%) saturate(212%) hue-rotate(149deg) brightness(89%) contrast(96%);
+}
