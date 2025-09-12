@@ -89,11 +89,9 @@ nav_button_link: /consultation
 theme: minima
 plugins:
   - jekyll-feed
-  - jekyll-last-modified-at
   - jekyll-paginate
   - jekyll-sitemap
   - jekyll-seo-tag
-  - jekyll-archives
 
 # Pagination 
 paginate: 9
