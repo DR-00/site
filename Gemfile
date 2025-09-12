@@ -1,11 +1,15 @@
 source "https://rubygems.org"
 
-# Use github-pages gem for GitHub Pages compatibility
-gem "github-pages", group: :jekyll_plugins
+# Jekyll and core dependencies
+gem "jekyll", "~> 4.3.0"
+gem "minima", "~> 2.5"
 
-# Jekyll plugins (only those not included in github-pages)
+# Jekyll plugins
 group :jekyll_plugins do
-  # All standard plugins are included in github-pages gem
+  gem "jekyll-feed", "~> 0.12"
+  gem "jekyll-sitemap"
+  gem "jekyll-paginate"
+  gem "jekyll-seo-tag"
 end
 
 # Add webrick for Ruby 3.0+ compatibility
