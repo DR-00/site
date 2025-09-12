@@ -14,27 +14,28 @@
       <img class="icon-menu d-none" src="/assets/tabler-icons/icons/article.svg" alt="menu" title="Menu" id="menu-icon"/>
     </div>
     {% if site.nav_item_one == null %}
+    {% elsif page.url == '/' %}
     {% else %}
     <li class="mx-4">
-      <a  class="nav-links" href="{{ site.nav_item_one_link }}">{{ site.nav_item_one }}</a>
+      <a class="nav-links{% if page.url == site.nav_item_one_link %} disabled{% endif %}" href="{{ site.nav_item_one_link }}">{{ site.nav_item_one }}</a>
     </li>
     {% endif %}
     {% if site.nav_item_two == null %}
     {% else %}
     <li class="mx-4">
-      <a  class="nav-links" href="{{ site.nav_item_two_link }}">{{ site.nav_item_two }}</a>
+      <a class="nav-links{% if page.url == site.nav_item_two_link %} disabled{% endif %}" href="{{ site.nav_item_two_link }}">{{ site.nav_item_two }}</a>
     </li>
     {% endif %}
     {% if site.nav_item_three == null %}
     {% else %}
     <li class="mx-4">
-      <a  class="nav-links" href="{{ site.nav_item_three_link }}">{{ site.nav_item_three }}</a>
+      <a class="nav-links{% if page.url == site.nav_item_three_link %} disabled{% endif %}" href="{{ site.nav_item_three_link }}">{{ site.nav_item_three }}</a>
     </li>
     {% endif %}
     {% if site.nav_item_four == null %}
     {% else %}
     <li class="mx-4">
-      <a  class="nav-links" href="{{ site.nav_item_four_link }}">{{ site.nav_item_four }}</a>
+      <a class="nav-links{% if page.url == site.nav_item_four_link %} disabled{% endif %}" href="{{ site.nav_item_four_link }}">{{ site.nav_item_four }}</a>
     </li>
     {% endif %}
     <li>
