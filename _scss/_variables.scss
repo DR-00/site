@@ -8,7 +8,9 @@
   --secondary-color: lightgrey;
   --secondary-color-dark: #6c757d;
   --white: #fffffe;
-  --highlight-color: #00ADEE;
+  --highlight-color: #355f9e;
+
+  --brand-color: #00ADEE;
   
   // Gray colors
   --dark-color: #151515;
@@ -37,6 +39,9 @@
   --shadow-image: rgba(55, 106, 117, 0.6);
   --shadow-industries: rgba(0, 0, 0, 0.1);
 }
+
+
+$brand-color: #00ADEE;
 
 // Core variables
 $version: "0.5.8";
@@ -81,7 +86,8 @@ $code-color: #d73e48 !default;
 $highgray-color-light: #ffe9b3 !default;
 $body-bg: $gray-color-light !default;
 $body-font-color: lighten($dark-color, 5%) !default;
-$link-color: $primary-color !default;
+$link-color: $brand-color !default;
+
 $link-color-dark: darken($link-color, 10%) !default;
 $link-color-light: lighten($link-color, 10%) !default;
 

@@ -1,15 +1,16 @@
 <div class="container my-4">
   <div class="container grid-xl">
-    <div class="columns justify-content-center">
+    <div class="columns justify-content-center services-cta-container">
 
       {% for products in site.data.products %}
       <div class="column col-xs-6 col-md-2 col-sm-4 col-xs-4 m-2 cta">
         <a href="{{ products.link }}">
           <div class="card card-link">
+            <div class=" services-icon-cta">
+              <img src="/assets/tabler-icons/icons/{{ products.icon }}.svg" alt="{{ products.name }}" />
+            </div>
             <div class="card-body text-center">
-              <div class="mb-2 services-icon-cta">
-                <img src="/assets/tabler-icons/icons/{{ products.icon }}.svg" alt="{{ products.name }}" />
-              </div>
+
               <h6 class="text-dark">{{ products.name }}</h6>
             </div>
           </div>
@@ -22,32 +23,3 @@
 </div>
 
 
-
-<style>
-
-  .cta {
-    width: min-content;
-  }
-  @media (max-width: 600px) {
-    .cta {
-      width: 100%;
-      flex: 1;
-    }
-  }
-
-  .services-icon-cta {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .services-icon-cta img {
-    width: 3em;
-    height: 3em;
-    background-color: var(--services-bg);
-    border-radius: 10px;
-    padding: 10px;
-    position: absolute;
-    top: -40px;
-  }
-</style>

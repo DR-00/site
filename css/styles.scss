@@ -65,6 +65,7 @@ a {
   text-decoration: none !important;
 }
 
+
 .card-link .card {
   height: 100%;
   display: flex;
@@ -186,6 +187,214 @@ border-radius: 100%;
   align-items: center;
 }
 
+// Bootstrap 5.3 Card fixes
+.card {
+  // Fix card-link behavior
+  &.card-link {
+    transition: all 0.2s ease-in-out;
+    
+    &:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+  }
+}
+
+// Services CTA specific card fixes
+.cta {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  
+  a {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    text-decoration: none;
+    
+    &:hover {
+      text-decoration: none;
+    }
+  }
+  
+  .card {
+    height: 100%;
+    min-height: 140px; // Ensure minimum height for CTA cards
+    display: flex;
+    flex-direction: column;
+    position: relative; // For absolute positioned icons
+    
+    .card-body {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 0rem 1rem 0rem 1rem; // Extra top padding for absolute icon
+    }
+  }
+}
+
+// Fix for absolute positioned icons in CTA cards
+
+.services-icon-cta {
+  position: relative;
+  height: 60px; // Reserve space for absolute positioned icon
+  margin-bottom: 0rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: -0.5rem;
+
+  img {
+    width: 3em;
+    height: 3em;
+    background-color: var(--services-bg);
+    border-radius: 10px;
+    padding: 10px;
+    position: absolute;
+    top: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+@media (max-width: 600px) {
+  .services-icon-cta {
+
+    margin-bottom: -2rem;
+
+  }
+}
+
+// CTA container responsive behavior
+.cta {
+  width: min-content;
+  
+  @media (max-width: 600px) {
+    width: 100%;
+    flex: 1;
+  }
+}
+
+// Services CTA specific equal heights - only for services-cta.html
+// Target only the specific services-cta-container
+.services-cta-container {
+  display: flex !important;
+  flex-wrap: wrap;
+  align-items: stretch !important; // This ensures all columns have the same height
+}
+
+// Force equal heights for CTA columns only
+.services-cta-container .column.cta {
+  display: flex !important;
+  flex-direction: column;
+  height: 100%;
+}
+
+// Alternative approach: Use CSS Grid for equal heights (services-cta only)
+@media (min-width: 768px) {
+  .services-cta-container {
+    display: grid !important;
+    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+    gap: 1rem;
+    align-items: stretch;
+  }
+  
+  .services-cta-container .column.cta {
+    display: contents !important;
+  }
+}
+
+// Services page specific equal heights - only for services.html
+.services-container {
+  display: grid !important;
+  grid-template-columns: 1fr; // Single column on mobile
+  gap: 1.5rem;
+  align-items: stretch;
+  
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(2, 1fr); // 2 columns on tablet
+  }
+  
+  @media (min-width: 992px) {
+    grid-template-columns: repeat(3, 1fr); // 3 columns on desktop
+  }
+}
+
+// Force equal heights for service columns only
+.services-container .service-item {
+  display: contents;
+  
+  a {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    text-decoration: none;
+    
+    &:hover {
+      text-decoration: none;
+    }
+  }
+  
+  .card {
+    height: 100%;
+    min-height: 250px; // Ensure minimum height for service cards
+    display: flex;
+    flex-direction: column;
+    position: relative; // For absolute positioned icons
+    
+    .card-body {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 3.5rem 1rem 1rem 1rem; // Extra top padding for absolute icon
+    }
+  }
+}
+
+// Services page icon styling
+.services-container .services-icon {
+  position: absolute;
+  top: -2rem; // Reserve space for absolute positioned icon
+  margin-bottom: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  img {
+    width: 4em;
+    height: 4em;
+    background-color: #E6EAEB;
+    border-radius: 10px;
+    padding: 10px;
+  }
+}
+
+// Fix card group heights
+.card-group {
+  .card {
+    height: 100%;
+  }
+}
+
+// Ensure consistent card body padding
+.card-body {
+  padding: 1rem;
+  
+  &.p-3 {
+    padding: 1rem !important;
+  }
+  
+  &.p-md-5 {
+    @media (min-width: 768px) {
+      padding: 3rem !important;
+    }
+  }
+}
+
 // Responsive video container
 .responsive-video {
   position: relative;
@@ -236,7 +445,7 @@ border-radius: 100%;
   }
 }
 
-// Navigation disabled state
+// Navigation disabled state (Bootstrap 5.3 compatible)
 .nav-links.disabled {
   color: #999 !important;
   cursor: default !important;
@@ -248,4 +457,113 @@ border-radius: 100%;
     color: #999 !important;
     text-decoration: none !important;
   }
+}
+
+// Bootstrap 5.3 disabled state fixes
+.disabled {
+  pointer-events: none;
+  opacity: 0.65;
+  
+  &.page-link {
+    color: #6c757d;
+    background-color: #fff;
+    border-color: #dee2e6;
+  }
+}
+
+// Ensure pagination disabled states work correctly
+.page-item.disabled .page-link {
+  color: #6c757d;
+  background-color: #fff;
+  border-color: #dee2e6;
+  pointer-events: none;
+}
+
+// Index page services specific equal heights - only for index.html
+.index-services-container {
+  display: grid !important;
+  grid-template-columns: 1fr; // Single column on mobile
+  gap: 1rem;
+  align-items: stretch;
+  
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(2, 1fr); // 2 columns on tablet
+  }
+  
+  @media (min-width: 992px) {
+    grid-template-columns: repeat(3, 1fr); // 3 columns on desktop
+  }
+}
+
+// Force equal heights for index service columns only - be very specific
+.index-services-container .service-item {
+  display: contents;
+  
+  a {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    text-decoration: none;
+    
+    &:hover {
+      text-decoration: none;
+    }
+  }
+  
+  .card {
+    height: 100%;
+    min-height: 200px; // Ensure minimum height for index service cards
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    
+    .card-body {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 1.5rem 1rem 1rem 1rem;
+    }
+  }
+}
+
+// Ensure blog cards are not affected by service card styles
+.featured-posts .column,
+.recent-posts .column,
+.listrecent .column,
+.card-group {
+  // Reset any service-specific styles for blog cards
+  display: block !important;
+  
+  .card {
+    // Reset card styles for blog cards
+    min-height: auto !important;
+    height: auto !important;
+    
+    .card-body {
+      // Reset card-body styles for blog cards
+      padding: 1rem !important;
+      justify-content: flex-start !important;
+      align-items: flex-start !important;
+    }
+  }
+}
+
+
+// Also target any other blog-related links that might be missed
+.pagination a,
+.section-title a,
+.services-cta-container a,
+.listfeaturedtag .card-title a,
+.listrecent .card-title a,
+.featured-posts .card-title a,
+.recent-posts .card-title a {
+  color: #333333 !important;
+  
+  &:hover {
+    color: var(--brand-color) !important;
+  }
+  
+
 }

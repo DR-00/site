@@ -6,13 +6,13 @@ title: Services
 
 <div class="container-full my-4">
   <div class="container grid-xl">
-    <div class="columns justify-content-center">
+    <div class="columns justify-content-center services-container">
       {% for products in site.data.products %}
-      <div class="column col-12 col-md-6 col-lg-4 my-4">
+      <div class="column service-item my-4">
         <a href="{{ products.link }}">
-          <div class="card card-link shadow-sm">
-            <div class="card-body text-center my-4">
-              <div class="mb-3 services-icon">
+          <div class="card card-link shadow-sm my-3">
+            <div class="card-body text-center">
+              <div class="mb-2 services-icon">
                 <img src="/assets/tabler-icons/icons/{{ products.icon }}.svg" alt="{{ products.name }}"/>
               </div>
               <h5 class="text-bold">{{ products.name }}</h5>
@@ -26,19 +26,3 @@ title: Services
     </div>
   </div>
 </div>
-
-<style>
-  .services-icon {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .services-icon img {
-    width: 4em;
-    height: 4em;
-    margin-top: -5em;
-    background-color: #E6EAEB;
-    border-radius: 10px;
-    padding: 10px;
-  }
-</style>

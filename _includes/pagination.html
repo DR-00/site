@@ -13,20 +13,20 @@
       
           {% assign prev_page = current_page | minus: 1 %}
           <li class="page-item{% unless current_page > 1 %} disabled{% endunless %}">
-            <a class="ml-1 mr-1 page-link" href="{% if current_page > 1 %}{% if prev_page == 1 %}/blog/{% else %}/blog/page{{ prev_page }}/{% endif %}{% else %}#{% endif %}">&laquo; Prev</a>
+            <a class="ms-1 me-1 page-link" href="{% if current_page > 1 %}{% if prev_page == 1 %}/blog/{% else %}/blog/page{{ prev_page }}/{% endif %}{% else %}#{% endif %}">&laquo; Prev</a>
           </li>
           {% for page_num in (1..total_pages) %}
             <li class="page-item{% if page_num == current_page %} disabled{% endif %}">
               {% if page_num == current_page %}
-                <a class="ml-1 mr-1 page-link disabled">{{ page_num }}</a>
+                <a class="ms-1 me-1 page-link disabled">{{ page_num }}</a>
               {% else %}
-                <a class="ml-1 mr-1 page-link" href="{% if page_num == 1 %}/blog/{% else %}/blog/page{{ page_num }}/{% endif %}">{{ page_num }}</a>
+                <a class="ms-1 me-1 page-link" href="{% if page_num == 1 %}/blog/{% else %}/blog/page{{ page_num }}/{% endif %}">{{ page_num }}</a>
               {% endif %}
             </li>
           {% endfor %}
           {% assign next_page = current_page | plus: 1 %}
           <li class="page-item{% unless current_page < total_pages %} disabled{% endunless %}">
-            <a class="ml-1 mr-1 page-link" href="{% if current_page < total_pages %}/blog/page{{ next_page }}/{% else %}#{% endif %}">Next &raquo;</a>
+            <a class="ms-1 me-1 page-link" href="{% if current_page < total_pages %}/blog/page{{ next_page }}/{% else %}#{% endif %}">Next &raquo;</a>
           </li>
       </ul>
       {% endif %}

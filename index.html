@@ -6,9 +6,10 @@ title: Home
 {% include header-home.html %}
 <div class="container-full">
   <div class="container grid-xl">
-    <div class="columns negative-m-s">
+    <!-- Services Section -->
+    <div class="columns negative-m-s index-services-container">
       {% for service in site.data.services %}
-      <div class="column col-12 col-md-6 col-lg-4 my-1">
+      <div class="column service-item my-1">
         <a href="{{ service.link }}">
           <div class="card card-link shadow">
             <div class="card-body text-center my-4">
@@ -22,12 +23,14 @@ title: Home
         </a>
       </div>
       {% endfor %} 
-
-      {% include industries.html %}
-
-      {% include blog-front-page.html %}
-
     </div>
+
+    <!-- Industries Section -->
+    {% include industries.html %}
+
+    <!-- Blog Section -->
+    {% include blog-front-page.html %}
+
   </div>
 </div>
 
@@ -36,6 +39,12 @@ title: Home
 .icon-tabler {
   width: 4em;
   height: 4em;
+
 }
+
+
+
+
+
 
 </style>
