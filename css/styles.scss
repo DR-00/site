@@ -567,3 +567,11 @@ border-radius: 100%;
   
 
 }
+
+blockquote {
+  border-left: 4px solid var(--border-light);
+  padding-left: 1rem;
+  margin-left: 1.3rem !important;
+  color: var(--text-primary);
+  font-style: italic;
+}

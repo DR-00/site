@@ -87,7 +87,5 @@ Final steps to protect your information from people nearby and to stop corporate
 
 ---
 
-> 
-> **Pro Tip:** Always ask "*why*" an app needs your data. If there isn't a logical explanation, it is your right to deny it.
-> 
->
+ 
+ **Pro Tip:** Always ask "*why*" an app needs your data. If there isn't a logical explanation, it is your right to deny it.
