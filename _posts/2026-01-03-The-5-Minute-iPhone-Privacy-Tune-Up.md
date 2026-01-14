@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "The 5-Minute iPhone Privacy Tune-Up"
-subtitle: "Why Alias Accounts and Cybersecurity Start at Home"
-description: This article explains why effective privacy management for high-profile families must include protecting children’s digital lives. It highlights how kids’ online activities can expose the entire household to risk, and outlines practical steps—like using alias accounts and compartmentalized credentials—to safeguard your family’s privacy from social media, gaming, and data brokers.
+subtitle: "17 settings for better privacy"
+description: "Quickly boost your iPhone privacy with this 5-minute checklist—simple steps to lock down your data, block tracking, and protect your personal information."
 author: Mishaal
 category: [ cybersecurity, privacy ]
 image: assets/post-images/iphone-privacy.png
