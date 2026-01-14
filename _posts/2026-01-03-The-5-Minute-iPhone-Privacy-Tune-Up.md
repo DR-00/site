@@ -21,16 +21,23 @@ The focus here is on being a "hard target", making it difficult for companies to
 
 Disabling these features ensures your private conversations and habits are not logged or analyzed by digital assistants.
 
-1. Your voice is your business; disabling this prevents your phone from recording your words.
-> Settings > Siri > Talk to Siri > Off
-2. You should wipe your existing digital footprint so there is no lasting record of your past requests.
->Select "Delete Siri & Dictation History"
-3. This stops your phone from constantly tracking your behavior just to "suggest" your next move.
->Shut off all Siri Suggestions
-4. To keep your information siloed, prevent Siri from "learning" from your specific apps.
->Click every app individually in Siri settings and disable "Learn from this App"
-5. Search engines often build a profile of your interests; switching to a private option protects your curiosity.
->Settings > Apps > Safari > Search Engine > Change to DuckDuckGo
+<ol>
+<li>Your voice is your business; disabling this prevents your phone from recording your words.<br>
+<blockquote>Settings &gt; Siri &gt; Talk to Siri &gt; Off</blockquote>
+</li>
+<li>You should wipe your existing digital footprint so there is no lasting record of your past requests.<br>
+<blockquote>Select "Delete Siri &amp; Dictation History"</blockquote>
+</li>
+<li>This stops your phone from constantly tracking your behavior just to "suggest" your next move.<br>
+<blockquote>Shut off all Siri Suggestions</blockquote>
+</li>
+<li>To keep your information siloed, prevent Siri from "learning" from your specific apps.<br>
+<blockquote>Click every app individually in Siri settings and disable "Learn from this App"</blockquote>
+</li>
+<li>Search engines often build a profile of your interests; switching to a private option protects your curiosity.<br>
+<blockquote>Settings &gt; Apps &gt; Safari &gt; Search Engine &gt; Change to DuckDuckGo</blockquote>
+</li>
+</ol>
 
 ---
 
@@ -38,14 +45,20 @@ Disabling these features ensures your private conversations and habits are not l
 
 Apps often request access to your sensors without a logical reason; you should restrict this to prevent 24/7 tracking of your movements.
 
-6. Most apps have no business knowing your precise location; limiting this prevents them from building a map of your daily life.
->Settings > Privacy & Security > Location Services > Set apps to "While Using" or "Never"
-7. For many apps, knowing your general city is enough; disabling "Precise Location" protects your exact home or work address.
->Within Location Services, click individual apps and toggle off "Precise Location"
-8. Restricting the camera and microphone ensures apps aren't "watching" or "listening" without a functional need.
->Settings > Privacy & Security > Camera (and Microphone) > Disable all except video calling apps
-9. Your phone tracks places you visit frequently; clearing this prevents a history of your most private locations from existing.
->Settings > Privacy & Security > Location Services > System Services > Significant Locations > Clear History and Turn Off
+<ol start="6">
+<li>Most apps have no business knowing your precise location; limiting this prevents them from building a map of your daily life.<br>
+<blockquote>Settings &gt; Privacy &amp; Security &gt; Location Services &gt; Set apps to "While Using" or "Never"</blockquote>
+</li>
+<li>For many apps, knowing your general city is enough; disabling "Precise Location" protects your exact home or work address.<br>
+<blockquote>Within Location Services, click individual apps and toggle off "Precise Location"</blockquote>
+</li>
+<li>Restricting the camera and microphone ensures apps aren't "watching" or "listening" without a functional need.<br>
+<blockquote>Settings &gt; Privacy &amp; Security &gt; Camera (and Microphone) &gt; Disable all except video calling apps</blockquote>
+</li>
+<li>Your phone tracks places you visit frequently; clearing this prevents a history of your most private locations from existing.<br>
+<blockquote>Settings &gt; Privacy &amp; Security &gt; Location Services &gt; System Services &gt; Significant Locations &gt; Clear History and Turn Off</blockquote>
+</li>
+</ol>
 
 ---
 
@@ -53,14 +66,20 @@ Apps often request access to your sensors without a logical reason; you should r
 
 These settings prevent your phone from "shouting" its presence to every network or advertiser you pass.
 
-10. This blocks apps from following your activity across other companies' websites for advertising.
->Settings > Privacy & Security > Tracking > Disable "Allow Apps to Request to Track"
-11. Prevent your device from automatically communicating with unknown, potentially malicious Wi-Fi networks in public.
->Settings > Wi-Fi > Ask to Join Networks > Set to "Ask"
-12. Using an "Advertising ID" allows companies to link your behavior across the web; turning this off breaks that link.
->Settings > Privacy & Security > Apple Advertising > Disable "Personalized Ads"
-13. Marketers use invisible "trackers" in emails to see when and where you open them; this setting blocks that tracking.
->Settings > Apps > Mail > Privacy Protection > Enable "Protect Mail Activity"
+<ol start="10">
+<li>This blocks apps from following your activity across other companies' websites for advertising.<br>
+<blockquote>Settings &gt; Privacy &amp; Security &gt; Tracking &gt; Disable "Allow Apps to Request to Track"</blockquote>
+</li>
+<li>Prevent your device from automatically communicating with unknown, potentially malicious Wi-Fi networks in public.<br>
+<blockquote>Settings &gt; Wi-Fi &gt; Ask to Join Networks &gt; Set to "Ask"</blockquote>
+</li>
+<li>Using an "Advertising ID" allows companies to link your behavior across the web; turning this off breaks that link.<br>
+<blockquote>Settings &gt; Privacy &amp; Security &gt; Apple Advertising &gt; Disable "Personalized Ads"</blockquote>
+</li>
+<li>Marketers use invisible "trackers" in emails to see when and where you open them; this setting blocks that tracking.<br>
+<blockquote>Settings &gt; Apps &gt; Mail &gt; Privacy Protection &gt; Enable "Protect Mail Activity"</blockquote>
+</li>
+</ol>
 
 ---
 
@@ -68,14 +87,20 @@ These settings prevent your phone from "shouting" its presence to every network 
 
 Final steps to protect your info from "shoulder surfers" and stop corporate data collection.
 
-14. This prevents strangers from reading your private messages while your phone is sitting on a table.
->Settings > Notifications > Show Previews > "When Unlocked"
-15. If your phone is stolen, this adds a layer of protection that prevents thieves from changing your Apple ID password.
->Settings > Face ID & Passcode > Stolen Device Protection > Turn On
-16. Stop sharing your personal usage habits and device performance data with Apple.
->Settings > Privacy & Security > Analytics & Improvements > Disable all sharing
-17. AirDrop can be used by strangers to send you unwanted files or see your device name.
->Settings > General > AirDrop > "Contacts Only"
+<ol start="14">
+<li>This prevents strangers from reading your private messages while your phone is sitting on a table.<br>
+<blockquote>Settings &gt; Notifications &gt; Show Previews &gt; "When Unlocked"</blockquote>
+</li>
+<li>If your phone is stolen, this adds a layer of protection that prevents thieves from changing your Apple ID password.<br>
+<blockquote>Settings &gt; Face ID &amp; Passcode &gt; Stolen Device Protection &gt; Turn On</blockquote>
+</li>
+<li>Stop sharing your personal usage habits and device performance data with Apple.<br>
+<blockquote>Settings &gt; Privacy &amp; Security &gt; Analytics &amp; Improvements &gt; Disable all sharing</blockquote>
+</li>
+<li>AirDrop can be used by strangers to send you unwanted files or see your device name.<br>
+<blockquote>Settings &gt; General &gt; AirDrop &gt; "Contacts Only"</blockquote>
+</li>
+</ol>
 
 ---
 

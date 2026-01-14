@@ -563,15 +563,16 @@ border-radius: 100%;
   
   &:hover {
     color: var(--brand-color) !important;
-  }
-  
-
+  } 
 }
 
 blockquote {
   border-left: 4px solid var(--border-light);
   padding-left: 1rem;
-  margin-left: 1.3rem !important;
+  margin-left: 2rem !important;
   color: var(--text-primary);
   font-style: italic;
+}
+ol > li::marker {
+  font-weight: bold;
 }
